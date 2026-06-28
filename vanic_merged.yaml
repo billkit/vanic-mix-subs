@@ -1,7 +1,7 @@
 # 合并 Vanic24/VPN 订阅
 # 源: 8EB, 9PB, Lifetime, Sub3, Filter (MIX socks5 因 mihomo 不支持入站 socks5 已排除)
-# 生成时间: 2026-06-28 14:13:23 UTC
-# 节点: 593 (去重前 610)  策略组: 7
+# 生成时间: 2026-06-28 19:43:38 UTC
+# 节点: 587 (去重前 607)  策略组: 7
 port: 7890
 socks-port: 7891
 allow-lan: false
@@ -8028,16 +8028,6 @@ proxies:
   sid: a02bf9
   spx: /
   headerType: none
-- name: 🇸🇬 SG-1 | Filter
-  type: hysteria2
-  server: vpn-sg-003.fastervpn.world
-  port: 443
-  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
-  sni: vpn-sg-003.fastervpn.world
-  servername: vpn-sg-003.fastervpn.world
-  skip-cert-verify: true
-  tfo: false
-  udp: true
 - name: 🇳🇱 NL-1 | Filter
   type: hysteria2
   server: 103.251.167.168
@@ -8050,101 +8040,61 @@ proxies:
   obfs-password: 2a7e8084206388f4
   tfo: false
   udp: true
-- name: 🇭🇰 HK-1 | Filter
-  type: trojan
-  server: 18.163.56.230
-  port: 3941
-  password: BxceQaOe
-  sni: t.me%2Fripaojiedian
-  servername: t.me%2Fripaojiedian
-  skip-cert-verify: true
-  tfo: false
-  udp: false
-- name: 🇸🇬 SG-3 | Filter
-  type: trojan
-  server: 151.101.1.242
+- name: 🇺🇸 US-1 | Filter
+  type: hysteria2
+  server: vn2.yuntong.click
   port: 443
-  password: Mitivpn
-  network: ws
-  sni: cdn.gamingdll.ir
-  servername: cdn.gamingdll.ir
+  password: f7cb07a0-e6f9-4d22-a60e-c61854450c89
+  sni: vn2.yuntong.click
+  servername: vn2.yuntong.click
   skip-cert-verify: true
-  client-fingerprint: firefox
-  ws-opts:
-    path: /de=mitivpn
+  obfs: salamander
+  obfs-password: eNM/NfxTsBqQIKcN0ezARS1z0f5mIxRd9GSwhVsyJlo=
   tfo: false
-  udp: false
+  udp: true
+- name: 🇸🇬 SG-1 | Filter
+  type: hysteria2
+  server: 18.143.178.20
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/WangCai2🇨🇳
+  servername: https://t.me/WangCai2🇨🇳
+  skip-cert-verify: true
+  tfo: false
+  udp: true
+- name: 🇸🇬 SG-2 | Filter
+  type: hysteria2
+  server: 54.179.158.79
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/WangCai2🇨🇳
+  servername: https://t.me/WangCai2🇨🇳
+  skip-cert-verify: true
+  tfo: false
+  udp: true
 - name: 🇺🇸 US-3 | Filter
   type: trojan
   server: d1.catcat321.com
-  port: 35141
+  port: 50888
   password: 7e70223b-f331-41d5-9313-02b8d2df2885
   sni: d.usj1.cat.bilibili.com
   servername: d.usj1.cat.bilibili.com
   skip-cert-verify: true
+  client-fingerprint: chrome
   tfo: false
   udp: false
-- name: 🇺🇸 US-4 | Filter
+- name: 🇨🇭 CH-1 | Filter
   type: trojan
-  server: d1.catcat321.com
-  port: 46581
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  sni: d.usj1.cat.bilibili.com
-  servername: d.usj1.cat.bilibili.com
+  server: 83.228.250.119
+  port: 42549
+  password: SoftNetConnect
+  sni: www.speedtest.net
+  servername: www.speedtest.net
   skip-cert-verify: true
+  client-fingerprint: chrome
   tfo: false
   udp: false
 - name: 🇺🇸 US-5 | Filter
-  type: trojan
-  server: d1.catcat321.com
-  port: 19139
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  sni: d.usj1.cat.bilibili.com
-  servername: d.usj1.cat.bilibili.com
-  skip-cert-verify: true
-  tfo: false
-  udp: false
-- name: 🇺🇸 US-6 | Filter
-  type: trojan
-  server: d1.catcat321.com
-  port: 14423
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  sni: d.usj1.cat.bilibili.com
-  servername: d.usj1.cat.bilibili.com
-  skip-cert-verify: true
-  tfo: false
-  udp: false
-- name: 🇺🇸 US-7 | Filter
-  type: trojan
-  server: d1.catcat321.com
-  port: 13320
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  sni: d.usj1.cat.bilibili.com
-  servername: d.usj1.cat.bilibili.com
-  skip-cert-verify: true
-  tfo: false
-  udp: false
-- name: 🇺🇸 US-8 | Filter
-  type: trojan
-  server: d1.catcat321.com
-  port: 14912
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  sni: d.usj1.cat.bilibili.com
-  servername: d.usj1.cat.bilibili.com
-  skip-cert-verify: true
-  tfo: false
-  udp: false
-- name: 🇺🇸 US-9 | Filter
-  type: trojan
-  server: d1.catcat321.com
-  port: 37145
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  sni: d.usj1.cat.bilibili.com
-  servername: d.usj1.cat.bilibili.com
-  skip-cert-verify: true
-  tfo: false
-  udp: false
-- name: 🇺🇸 US-11 | Filter
   type: trojan
   server: d1.catcat321.com
   port: 58542
@@ -8155,17 +8105,18 @@ proxies:
   client-fingerprint: chrome
   tfo: false
   udp: false
-- name: 🇺🇸 US-12 | Filter
+- name: 🇸🇬 SG-3 | Filter
   type: trojan
-  server: d1.catcat321.com
-  port: 50888
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  sni: d.usj1.cat.bilibili.com
-  servername: d.usj1.cat.bilibili.com
+  server: jpbgp.netvigor.cc
+  port: 19128
+  password: OccIqeORGQwiNkwS
+  sni: yazhou10.dynu.net
+  servername: yazhou10.dynu.net
   skip-cert-verify: true
+  client-fingerprint: chrome
   tfo: false
   udp: false
-- name: 🇺🇸 US-13 | Filter
+- name: 🇺🇸 US-6 | Filter
   type: trojan
   server: d1.catcat321.com
   port: 58868
@@ -8175,17 +8126,17 @@ proxies:
   skip-cert-verify: true
   tfo: false
   udp: false
-- name: 🇺🇸 US-14 | Filter
+- name: 🇺🇸 US-9 | Filter
   type: trojan
   server: d1.catcat321.com
-  port: 54007
+  port: 13320
   password: 7e70223b-f331-41d5-9313-02b8d2df2885
   sni: d.usj1.cat.bilibili.com
   servername: d.usj1.cat.bilibili.com
   skip-cert-verify: true
   tfo: false
   udp: false
-- name: 🇨🇭 CH-1 | Filter
+- name: 🇨🇭 CH-2 | Filter
   type: vless
   server: 83.228.235.106
   port: 2082
@@ -8222,7 +8173,7 @@ proxies:
   tls: true
   tfo: false
   udp: false
-- name: 🇨🇭 CH-2 | Filter
+- name: 🇨🇭 CH-3 | Filter
   type: vless
   server: 172.65.111.43
   port: 22
@@ -8259,7 +8210,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   tfo: false
   udp: false
-- name: 🇺🇸 US-16 | Filter
+- name: 🇺🇸 US-10 | Filter
   type: vless
   server: 185.170.154.202
   port: 443
@@ -8319,19 +8270,89 @@ proxies:
   tls: true
   tfo: false
   udp: false
-- name: 🇬🇧 GB-2 | Filter
+- name: 🇺🇸 US-11 | Filter
   type: vless
-  server: 31.77.161.2
-  port: 8443
-  uuid: a6704fb4-4874-4e6b-98f4-571b048e3d90
-  sni: prod.de-node-01.security-sbrf.ru
-  servername: prod.de-node-01.security-sbrf.ru
+  server: 38.244.20.164
+  port: 443
+  uuid: 74cc7d1e-65c8-4dec-8005-f682f0fa96ab
+  sni: www.apple.com
+  servername: www.apple.com
   skip-cert-verify: true
-  client-fingerprint: chrome
+  client-fingerprint: safari
   tls: true
   reality-opts:
-    public-key: 4XxjInQuDp4SqaYF03yQ1VY61exkKi9e0RS5-kgyxAE
-    short-id: db04ce8bdb8900f1
+    public-key: 867RbOeSOc7qDdW1Ax8jAQ_qqS6_kGAEZ4PZdpT4jyE
+    short-id: 3514e9df97b32520
+  flow: xtls-rprx-vision
+  tfo: false
+  udp: false
+- name: 🇺🇸 US-12 | Filter
+  type: vless
+  server: 104.18.153.130
+  port: 443
+  uuid: d8b54a64-3e9a-4455-93c4-452202fbe440
+  network: xhttp
+  sni: www.chinns.ccwu.cc
+  servername: www.chinns.ccwu.cc
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  xhttp-opts:
+    path: /a/v----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE----VPNCUSTOMIZE
+    host: www.chinns.ccwu.cc
+    headers:
+      Host: www.chinns.ccwu.cc
+    mode: stream-one
+  tls: true
+  tfo: false
+  udp: false
+- name: 🇩🇪 DE-3 | Filter
+  type: vless
+  server: 92.38.139.63
+  port: 9891
+  uuid: 97d290a0-acec-4aae-b8cf-c7111a5a6397
+  network: xhttp
+  skip-cert-verify: true
+  xhttp-opts:
+    path: /
+    mode: auto
+  tfo: false
+  udp: false
+- name: 🇩🇪 DE-4 | Filter
+  type: vless
+  server: free01.tunnely.space
+  port: 2096
+  uuid: a1316da7-0d3d-4ad4-aead-670d5f2e3151
+  network: grpc
+  sni: free01.tunnely.space
+  servername: free01.tunnely.space
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: grpc
+    grpc-mode: gun
+  tls: true
+  reality-opts:
+    public-key: mChFHtaRmeuO2aDuDPqZvBFaCz6f34sVJIKuJcAR130
+    short-id: 2e40144ddc07e8e1
+  tfo: false
+  udp: false
+- name: 🇺🇸 US-14 | Filter
+  type: vless
+  server: mmdu-production.up.railway.app
+  port: 443
+  uuid: Netherlands
+  network: ws
+  sni: mmdu-production.up.railway.app
+  servername: mmdu-production.up.railway.app
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws/Netherlands
+    headers:
+      Host: mmdu-production.up.railway.app
+  tls: true
+  alpn:
+  - http/1.1
   tfo: false
   udp: false
 - name: 🇳🇱 NL-3 | Filter
@@ -8361,230 +8382,138 @@ proxies:
   _sni: is1-ssl.mzstatic.com
   _network: xhttp
   _path: ''
-- name: 🇳🇱 NL-4 | Filter
+- name: 🇺🇸 US-15 | Filter
   type: vless
-  server: 199.232.78.143
-  port: 443
-  uuid: 3d8bc73a-36d2-4b1c-83ff-d1e7bcdf3b98
-  network: ws
-  sni: global.fastly.com
-  servername: global.fastly.com
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: npnl-2-one.global.ssl.fastly.net
-  tls: true
-  alpn:
-  - http/1.1
-  tfo: false
-  udp: false
-- name: 🇺🇸 US-17 | Filter
-  type: vless
-  server: wst.imsoon.net
-  port: 80
-  uuid: 1b15fe14-d01a-47f0-acba-98f79a13c2af
+  server: reseau.proxy.rlwy.net
+  port: 49424
+  uuid: c999714c-9946-4bf2-9427-588aa7c72c94
   network: xhttp
-  skip-cert-verify: true
-  xhttp-opts:
-    path: /SoonTeam
-    host: play.google.com
-    headers:
-      Host: play.google.com
-    mode: auto
-  tfo: false
-  udp: false
-- name: 🇹🇷 TR-1 | Filter
-  type: vless
-  server: 45.136.5.98
-  port: 443
-  uuid: e82277d0-9a7f-4217-aac4-b587529d4f95
-  sni: icloud.com
-  servername: icloud.com
+  sni: www.oracle.com
+  servername: www.oracle.com
   skip-cert-verify: true
   client-fingerprint: chrome
+  xhttp-opts:
+    path: /
+    host: www.oracle.com
+    headers:
+      Host: www.oracle.com
+    mode: auto
   tls: true
   reality-opts:
-    public-key: Ytg9Ug4dn1gyWsduSUsWREP2OnfLptkOjevFrJoy7nA
-    short-id: 0d45
+    public-key: _wmJo5YpHNrSzudYESs8ZvbuBPdAdIigioAHCUh64BY
+    short-id: e13baa
   tfo: false
   udp: false
-- name: 🇺🇸 US-18 | Filter
+- name: 🇦🇹 AT-1 | Filter
   type: vless
-  server: 76.13.121.90
-  port: 80
-  uuid: 1b15fe14-d01a-47f0-acba-98f79a13c2af
-  network: xhttp
-  skip-cert-verify: true
-  xhttp-opts:
-    path: /SoonTeam
-    host: play.google.com
-    headers:
-      Host: play.google.com
-    mode: auto
-  tfo: false
-  udp: false
-- name: 🇺🇸 US-19 | Filter
-  type: vless
-  server: 104.26.4.60
-  port: 443
-  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
-  network: ws
-  sni: t1s1.rittbo.kdns.fr
-  servername: t1s1.rittbo.kdns.fr
+  server: ss.ll0ll.vip
+  port: 2096
+  uuid: d9228d5d-618d-4771-835f-96b4ebdd38cd
+  network: grpc
+  sni: id.vk.com
+  servername: id.vk.com
   skip-cert-verify: true
   client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: t1s1.rittbo.kdns.fr
-  tls: true
-  tfo: false
-  udp: false
-- name: 🇩🇪 DE-3 | Filter
-  type: vless
-  server: 140.248.185.253
-  port: 443
-  uuid: 6e7ebc40-58a6-c567-4ae8-51b7605a272b
-  network: ws
-  sni: global.fastly.com
-  servername: global.fastly.com
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: nesfzzeshab.global.ssl.fastly.net
-  tls: true
-  alpn:
-  - h3
-  - h2
-  - http/1.1
-  tfo: false
-  udp: false
-- name: 🇷🇺 RU-1 | Filter
-  type: vless
-  server: fast.cd-tur4.ir
-  port: 443
-  uuid: e461afdd-7c8e-473e-815d-88b72960c6b1
-  network: ws
-  sni: default.ssl.fastly.net
-  servername: default.ssl.fastly.net
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: fancii.global.ssl.fastly.net
-  tls: true
-  tfo: false
-  udp: false
-- name: 🇷🇺 RU-2 | Filter
-  type: vless
-  server: 151.101.56.6
-  port: 443
-  uuid: e461afdd-7c8e-473e-815d-88b72960c6b1
-  network: ws
-  sni: default.ssl.fastly.net
-  servername: default.ssl.fastly.net
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: fancii.global.ssl.fastly.net
-  tls: true
-  tfo: false
-  udp: false
-- name: 🇯🇵 JP-1 | Filter
-  type: vless
-  server: 103.100.158.203
-  port: 443
-  uuid: 6a1f6c94-7785-42e2-9203-381d1f4db37e
-  sni: www.apple.com
-  servername: www.apple.com
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: 1xIu8ESLs4JviWXp8XaOceWAEVHqWLzNIiojA_uf8Ug
-    short-id: 83feb7aa267e9ddf
-  flow: xtls-rprx-vision
-  tfo: false
-  udp: false
-- name: 🇷🇺 RU-3 | Filter
-  type: vless
-  server: 167.82.101.251
-  port: 443
-  uuid: e461afdd-7c8e-473e-815d-88b72960c6b1
-  network: ws
-  sni: default.ssl.fastly.net
-  servername: default.ssl.fastly.net
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /
-    headers:
-      Host: fancii.global.ssl.fastly.net
-  tls: true
-  tfo: false
-  udp: false
-- name: 🇫🇮 FI-1 | Filter
-  type: vless
-  server: 217.217.247.253
-  port: 443
-  uuid: 8ca5cbd3-ec16-4728-bedc-2bc0d82f0922
-  sni: enterprisekitten.com
-  servername: enterprisekitten.com
-  skip-cert-verify: true
-  client-fingerprint: chrome
+  grpc-opts:
+    grpc-service-name: vless-grpc-reality
+    grpc-mode: gun
   tls: true
   reality-opts:
     public-key: SbVKOEMjK0sIlbwg4akyBg5mL5KZwwB-ed4eEE7YnRc
-    short-id: 6ba85179e30d4fc2
-  flow: xtls-rprx-vision
   tfo: false
   udp: false
-- name: 🇫🇷 FR-1 | Filter
+- name: 🇳🇱 NL-4 | Filter
   type: vless
-  server: 62.210.172.147
-  port: 443
-  uuid: 7bd180e8-1142-4387-93f5-03e8d750a896
-  network: ws
-  sni: python-graysongon.wasmer.app
-  servername: python-graysongon.wasmer.app
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /7bd180e8
-    headers:
-      Host: python-graysongon.wasmer.app
-  tls: true
-  tfo: false
-  udp: false
-- name: 🇦🇪 AE-1 | Filter
-  type: vless
-  server: 45.80.111.1
-  port: 2083
-  uuid: 198f20e3-3c81-4852-872b-aea97920a594
+  server: 104.16.72.70
+  port: 8443
+  uuid: 2179012d-4aa6-4acd-9e67-be80d8a63486
   network: xhttp
-  sni: Sa.sorixset.ir
-  servername: Sa.sorixset.ir
+  sni: sa.sorixset.ir
+  servername: sa.sorixset.ir
   skip-cert-verify: true
   client-fingerprint: chrome
   xhttp-opts:
-    path: /@V2RAYNG_IP-@V2RAYNG_IP-@V2RAYNG_IP-@V2RAYNG_IP-@V2RAYNG_IP-@V2RAYNG_IP-
-    host: Sa.sorixset.ir
+    path: /@IRAN_V2RAY1-@IRAN_V2RAY1-@IRAN_V2RAY1-@IRAN_V2RAY1-@IRAN_V2RAY1-@IRAN_V2RAY1-@IRAN_V2RAY1-
+    host: sa.sorixset.ir
     headers:
-      Host: Sa.sorixset.ir
+      Host: sa.sorixset.ir
     mode: auto
   tls: true
+  tfo: false
+  udp: false
+- name: 🇺🇸 US-16 | Filter
+  type: vless
+  server: namedkenzo-senzo.hf.space
+  port: 443
+  uuid: 8b8a1e98-9bd2-4194-b97f-415881dc408a
+  network: ws
+  sni: namedkenzo-senzo.hf.space
+  servername: namedkenzo-senzo.hf.space
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /ws/8b8a1e98-9bd2-4194-b97f-415881dc408a
+    headers:
+      Host: namedkenzo-senzo.hf.space
+  tls: true
+  alpn:
+  - http/1.1
+  tfo: false
+  udp: false
+- name: 🇩🇪 DE-5 | Filter
+  type: vless
+  server: support.fastcmd.top
+  port: 443
+  uuid: 73fc635f-e51c-4cf8-b659-6b99482618f9
+  network: ws
+  sni: pass.pccmd.ir
+  servername: pass.pccmd.ir
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: pass.pccmd.ir
+  tls: true
+  alpn:
+  - http/1.1
+  tfo: false
+  udp: false
+- name: 🇨🇭 CH-4 | Filter
+  type: vless
+  server: 83.228.250.119
+  port: 2083
+  uuid: 89049f79-320b-48a0-b1cf-110165cae30c
+  sni: www.yahoo.com
+  servername: www.yahoo.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: l1Ekgk-8T5rB-yolp5OIpc0XZTcd2gBeqmIR2bytKXY
+    short-id: 4e590fdc
+  flow: xtls-rprx-vision
+  tfo: false
+  udp: false
+- name: 🇩🇪 DE-6 | Filter
+  type: vless
+  server: 185.137.157.72
+  port: 443
+  uuid: 55a5044d-5b35-405f-971c-ea7aacaafcb4
+  sni: www.nvidia.com
+  servername: www.nvidia.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: z6_OFl0jskilOOxkQcUcdQOCS4-LVndwFF9i7kIOPzg
+    short-id: d23753491eefde7e
+  flow: xtls-rprx-vision
   tfo: false
   udp: false
 - name: 🇱🇹 LT-1 | Filter
   type: vless
-  server: 45.194.10.54
+  server: 45.194.10.210
   port: 8443
   uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   sni: storage.yandex.net
@@ -8598,20 +8527,21 @@ proxies:
   flow: xtls-rprx-vision
   tfo: false
   udp: false
-- name: 🇱🇹 LT-2 | Filter
+- name: 🇺🇸 US-18 | Filter
   type: vless
-  server: 45.194.10.147
+  server: 104.20.2.221
   port: 8443
-  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
-  sni: storage.yandex.net
-  servername: storage.yandex.net
+  uuid: 6c7a6a6a-6a6a-4000-8000-000000000002
+  network: ws
+  sni: bycf.lzjnb.shop
+  servername: bycf.lzjnb.shop
   skip-cert-verify: true
-  client-fingerprint: firefox
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: bycf.lzjnb.shop
   tls: true
-  reality-opts:
-    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
-    short-id: 2cfb5a0ae8ab0cb0
-  flow: xtls-rprx-vision
   tfo: false
   udp: false
 - name: 🇱🇹 LT-3 | Filter
@@ -8628,6 +8558,15 @@ proxies:
     public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
     short-id: 2cfb5a0ae8ab0cb0
   flow: xtls-rprx-vision
+  tfo: false
+  udp: false
+- name: 🇺🇸 US-20 | Filter
+  type: vmess
+  server: v29.hdacd.com
+  port: 30829
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  skip-cert-verify: true
+  alterId: 2
   tfo: false
   udp: false
 proxy-groups:
@@ -9194,48 +9133,42 @@ proxy-groups:
   - 🇹🇷 TR-1 | Sub3
   - 🇮🇳 IN-1 | Sub3
   - 🇺🇦 UA-1 | Sub3
-  - 🇸🇬 SG-1 | Filter
   - 🇳🇱 NL-1 | Filter
-  - 🇭🇰 HK-1 | Filter
-  - 🇸🇬 SG-3 | Filter
+  - 🇺🇸 US-1 | Filter
+  - 🇸🇬 SG-1 | Filter
+  - 🇸🇬 SG-2 | Filter
   - 🇺🇸 US-3 | Filter
-  - 🇺🇸 US-4 | Filter
-  - 🇺🇸 US-5 | Filter
-  - 🇺🇸 US-6 | Filter
-  - 🇺🇸 US-7 | Filter
-  - 🇺🇸 US-8 | Filter
-  - 🇺🇸 US-9 | Filter
-  - 🇺🇸 US-11 | Filter
-  - 🇺🇸 US-12 | Filter
-  - 🇺🇸 US-13 | Filter
-  - 🇺🇸 US-14 | Filter
   - 🇨🇭 CH-1 | Filter
-  - 🇸🇬 SG-4 | Filter
+  - 🇺🇸 US-5 | Filter
+  - 🇸🇬 SG-3 | Filter
+  - 🇺🇸 US-6 | Filter
+  - 🇺🇸 US-9 | Filter
   - 🇨🇭 CH-2 | Filter
+  - 🇸🇬 SG-4 | Filter
+  - 🇨🇭 CH-3 | Filter
   - 🇰🇷 KR-1 | Filter
   - 🇩🇪 DE-1 | Filter
-  - 🇺🇸 US-16 | Filter
+  - 🇺🇸 US-10 | Filter
   - 🇬🇧 GB-1 | Filter
   - 🇸🇪 SE-1 | Filter
   - 🇳🇱 NL-2 | Filter
-  - 🇬🇧 GB-2 | Filter
-  - 🇳🇱 NL-3 | Filter
-  - 🇳🇱 NL-4 | Filter
-  - 🇺🇸 US-17 | Filter
-  - 🇹🇷 TR-1 | Filter
-  - 🇺🇸 US-18 | Filter
-  - 🇺🇸 US-19 | Filter
+  - 🇺🇸 US-11 | Filter
+  - 🇺🇸 US-12 | Filter
   - 🇩🇪 DE-3 | Filter
-  - 🇷🇺 RU-1 | Filter
-  - 🇷🇺 RU-2 | Filter
-  - 🇯🇵 JP-1 | Filter
-  - 🇷🇺 RU-3 | Filter
-  - 🇫🇮 FI-1 | Filter
-  - 🇫🇷 FR-1 | Filter
-  - 🇦🇪 AE-1 | Filter
+  - 🇩🇪 DE-4 | Filter
+  - 🇺🇸 US-14 | Filter
+  - 🇳🇱 NL-3 | Filter
+  - 🇺🇸 US-15 | Filter
+  - 🇦🇹 AT-1 | Filter
+  - 🇳🇱 NL-4 | Filter
+  - 🇺🇸 US-16 | Filter
+  - 🇩🇪 DE-5 | Filter
+  - 🇨🇭 CH-4 | Filter
+  - 🇩🇪 DE-6 | Filter
   - 🇱🇹 LT-1 | Filter
-  - 🇱🇹 LT-2 | Filter
+  - 🇺🇸 US-18 | Filter
   - 🇱🇹 LT-3 | Filter
+  - 🇺🇸 US-20 | Filter
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -9817,48 +9750,42 @@ proxy-groups:
 - name: 📦 Filter
   type: url-test
   proxies:
-  - 🇸🇬 SG-1 | Filter
   - 🇳🇱 NL-1 | Filter
-  - 🇭🇰 HK-1 | Filter
-  - 🇸🇬 SG-3 | Filter
+  - 🇺🇸 US-1 | Filter
+  - 🇸🇬 SG-1 | Filter
+  - 🇸🇬 SG-2 | Filter
   - 🇺🇸 US-3 | Filter
-  - 🇺🇸 US-4 | Filter
-  - 🇺🇸 US-5 | Filter
-  - 🇺🇸 US-6 | Filter
-  - 🇺🇸 US-7 | Filter
-  - 🇺🇸 US-8 | Filter
-  - 🇺🇸 US-9 | Filter
-  - 🇺🇸 US-11 | Filter
-  - 🇺🇸 US-12 | Filter
-  - 🇺🇸 US-13 | Filter
-  - 🇺🇸 US-14 | Filter
   - 🇨🇭 CH-1 | Filter
-  - 🇸🇬 SG-4 | Filter
+  - 🇺🇸 US-5 | Filter
+  - 🇸🇬 SG-3 | Filter
+  - 🇺🇸 US-6 | Filter
+  - 🇺🇸 US-9 | Filter
   - 🇨🇭 CH-2 | Filter
+  - 🇸🇬 SG-4 | Filter
+  - 🇨🇭 CH-3 | Filter
   - 🇰🇷 KR-1 | Filter
   - 🇩🇪 DE-1 | Filter
-  - 🇺🇸 US-16 | Filter
+  - 🇺🇸 US-10 | Filter
   - 🇬🇧 GB-1 | Filter
   - 🇸🇪 SE-1 | Filter
   - 🇳🇱 NL-2 | Filter
-  - 🇬🇧 GB-2 | Filter
-  - 🇳🇱 NL-3 | Filter
-  - 🇳🇱 NL-4 | Filter
-  - 🇺🇸 US-17 | Filter
-  - 🇹🇷 TR-1 | Filter
-  - 🇺🇸 US-18 | Filter
-  - 🇺🇸 US-19 | Filter
+  - 🇺🇸 US-11 | Filter
+  - 🇺🇸 US-12 | Filter
   - 🇩🇪 DE-3 | Filter
-  - 🇷🇺 RU-1 | Filter
-  - 🇷🇺 RU-2 | Filter
-  - 🇯🇵 JP-1 | Filter
-  - 🇷🇺 RU-3 | Filter
-  - 🇫🇮 FI-1 | Filter
-  - 🇫🇷 FR-1 | Filter
-  - 🇦🇪 AE-1 | Filter
+  - 🇩🇪 DE-4 | Filter
+  - 🇺🇸 US-14 | Filter
+  - 🇳🇱 NL-3 | Filter
+  - 🇺🇸 US-15 | Filter
+  - 🇦🇹 AT-1 | Filter
+  - 🇳🇱 NL-4 | Filter
+  - 🇺🇸 US-16 | Filter
+  - 🇩🇪 DE-5 | Filter
+  - 🇨🇭 CH-4 | Filter
+  - 🇩🇪 DE-6 | Filter
   - 🇱🇹 LT-1 | Filter
-  - 🇱🇹 LT-2 | Filter
+  - 🇺🇸 US-18 | Filter
   - 🇱🇹 LT-3 | Filter
+  - 🇺🇸 US-20 | Filter
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
