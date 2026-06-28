@@ -26,19 +26,28 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Run merger
+      - name: Run merger (raw shell)
         run: |
-          echo "=== debug start ==="
+          echo "=== stage 1: env ==="
           pwd
           ls -la
-          python3 --version
-          python3 -c "import yaml; print('PyYAML', yaml.__version__)"
-          echo "=== connectivity ==="
-          curl -sSI https://raw.githubusercontent.com/Vanic24/VPN/main/8EB | head -5
-          echo "=== build ==="
-          python3 build_merged.py
-          echo "=== done ==="
-          ls -la vanic_merged.yaml
+          which python3
+          python3 --version || true
+          echo "=== stage 2: pyyaml ==="
+          python3 -c "import yaml; print(yaml.__version__)" 2>&1 || echo "PYYAML MISSING"
+          echo "=== stage 3: fetch one ==="
+          python3 - <<'PY' 2>&1 || true
+          import urllib.request
+          try:
+              d = urllib.request.urlopen("https://raw.githubusercontent.com/Vanic24/VPN/main/8EB", timeout=15).read().decode("utf-8")
+              print(f"fetched bytes: {len(d)}")
+          except Exception as e:
+              print(f"FETCH ERR: {e}")
+          PY
+          echo "=== stage 4: build ==="
+          python3 build_merged.py 2>&1 || echo "BUILD ERR FIRED"
+          echo "=== stage 5: ls ==="
+          ls -la
 
       - name: Validate merged YAML
         run: |
