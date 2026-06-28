@@ -27,7 +27,17 @@ jobs:
           python-version: "3.12"
 
       - name: Run merger
-        run: python3 build_merged.py
+        run: |
+          set -euo pipefail
+          echo "=== debug start ==="
+          pwd
+          ls -la
+          python3 --version
+          python3 -c "import yaml; print('PyYAML', yaml.__version__)"
+          echo "=== build ==="
+          python3 build_merged.py
+          echo "=== done ==="
+          ls -la vanic_merged.yaml
 
       - name: Validate merged YAML
         run: |
