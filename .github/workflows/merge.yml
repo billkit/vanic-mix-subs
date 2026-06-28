@@ -26,6 +26,9 @@ jobs:
         with:
           python-version: "3.12"
 
+      - name: Install PyYAML
+        run: pip install pyyaml
+
       - name: Run merger (raw shell)
         run: |
           echo "=== stage 1: env ==="
