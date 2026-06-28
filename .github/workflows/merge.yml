@@ -35,7 +35,10 @@ jobs:
           python3 --version
           python3 -c "import yaml; print('PyYAML', yaml.__version__)"
           echo "=== build ==="
-          python3 build_merged.py
+          if ! python3 build_merged.py 2>&1 | tee /tmp/merge_err.log; then
+            echo "::error::merger script failed, see log above"
+            exit 1
+          fi
           echo "=== done ==="
           ls -la vanic_merged.yaml
 
