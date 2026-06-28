@@ -1,0 +1,76 @@
+name: merge-vanic
+
+on:
+  # 每 6 小时
+  schedule:
+    - cron: "13 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "build_merged.py"
+      - ".github/workflows/merge.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Run merger
+        run: python3 build_merged.py
+
+      - name: Validate merged YAML
+        run: |
+          python3 - <<'PY'
+          import yaml
+          cfg = yaml.safe_load(open('vanic_merged.yaml', encoding='utf-8'))
+
+          proxies = cfg['proxies']
+          groups = cfg['proxy-groups']
+          rules = cfg['rules']
+
+          assert len(proxies) >= 400, f"代理过少: {len(proxies)}"
+          assert len(rules) >= 400, f"规则过少: {len(rules)}"
+
+          # 引用一致性
+          node_names = {p['name'] for p in proxies}
+          group_names = {g['name'] for g in groups}
+          for g in groups:
+              for ref in g['proxies']:
+                  assert ref in node_names or ref in group_names, f"{g['name']} 引用了不存在的代理: {ref}"
+
+          # 末条 MATCH 必须存在
+          assert rules[-1].startswith('MATCH,'), f"末条不是 MATCH: {rules[-1]}"
+          match_target = rules[-1].split(',', 1)[1]
+          assert match_target in group_names, f"MATCH 目标不存在: {match_target}"
+
+          # 类型分布
+          type_cnt = {}
+          for p in proxies:
+              type_cnt[p['type']] = type_cnt.get(p['type'], 0) + 1
+          print(f"OK proxies={len(proxies)} rules={len(rules)} groups={len(groups)}")
+          print(f"types: {type_cnt}")
+          PY
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git status --porcelain | grep -q vanic_merged.yaml; then
+            git add vanic_merged.yaml
+            git commit -m "chore: refresh merged vanic subscription" || true
+            git push
+            echo "Pushed update"
+          else
+            echo "No content change"
+          fi
