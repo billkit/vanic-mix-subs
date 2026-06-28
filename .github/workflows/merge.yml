@@ -28,17 +28,15 @@ jobs:
 
       - name: Run merger
         run: |
-          set -euo pipefail
           echo "=== debug start ==="
           pwd
           ls -la
           python3 --version
           python3 -c "import yaml; print('PyYAML', yaml.__version__)"
+          echo "=== connectivity ==="
+          curl -sSI https://raw.githubusercontent.com/Vanic24/VPN/main/8EB | head -5
           echo "=== build ==="
-          if ! python3 build_merged.py 2>&1 | tee /tmp/merge_err.log; then
-            echo "::error::merger script failed, see log above"
-            exit 1
-          fi
+          python3 build_merged.py
           echo "=== done ==="
           ls -la vanic_merged.yaml
 
