@@ -1,7 +1,7 @@
 # 合并 Vanic24/VPN 订阅
 # 源: 8EB, 9PB, Lifetime, Sub3, Filter (MIX socks5 因 mihomo 不支持入站 socks5 已排除)
-# 生成时间: 2026-06-30 04:22:26 UTC
-# 节点: 594 (去重前 609)  策略组: 7
+# 生成时间: 2026-06-30 09:58:50 UTC
+# 节点: 608 (去重前 635)  策略组: 7
 port: 7890
 socks-port: 7891
 allow-lan: false
@@ -1272,12 +1272,13 @@ proxies:
   server: srvhy1.ezcon24.online
   port: 8443
   password: 97d290a0-acec-4aae-b8cf-c7111a5a6397
+  sni: srvhy1.ezcon24.online
   skip-cert-verify: false
+  udp: true
   tls:
+    enabled: true
     server_name: srvhy1.ezcon24.online
     insecure: false
-    enabled: true
-  insecure: false
 - name: 🇨🇦 CA-25 | 8EB
   type: vless
   server: 172.64.53.34
@@ -1458,13 +1459,16 @@ proxies:
   server: 208.87.242.77
   port: 35000
   password: f872264a-664a-4b6a-84e8-516a39099860
+  sni: www.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 35000-39000
+  server_ports:
+  - 35000:39000
   tls:
+    enabled: true
     server_name: www.apple.com
     insecure: true
-    enabled: true
-  insecure: true
-  mport: 35000-39000
 - name: 🇱🇹 LT-3 | 8EB
   type: vless
   server: 45.194.10.175
@@ -1719,141 +1723,171 @@ proxies:
   server: usa.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇺🇸 US-7 | 9PB
   type: hysteria2
   server: usa.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇺🇸 US-8 | 9PB
   type: hysteria2
   server: usa.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇺🇸 US-9 | 9PB
   type: hysteria2
   server: usa.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇺🇸 US-10 | 9PB
   type: hysteria2
   server: usa.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇨🇳 CN-1 | 9PB
   type: hysteria2
   server: tw-ap9zr5lm.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NT6iNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇨🇳 CN-2 | 9PB
   type: hysteria2
   server: tw-ap9zr5lm.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NT6iNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇨🇳 CN-3 | 9PB
   type: hysteria2
   server: tw-ap9zr5lm.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NT6iNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇨🇳 CN-4 | 9PB
   type: hysteria2
   server: tw-ap9zr5lm.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NT6iNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇨🇳 CN-5 | 9PB
   type: hysteria2
   server: tw-ap9zr5lm.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NT6iNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇨🇳 CN-6 | 9PB
   type: anytls
   server: tw-ap9zr5lm.9966690.xyz
@@ -1929,71 +1963,86 @@ proxies:
   server: de-by10fuo0kw.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTowNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇩🇪 DE-2 | 9PB
   type: hysteria2
   server: de-by10fuo0kw.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTowNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇩🇪 DE-3 | 9PB
   type: hysteria2
   server: de-by10fuo0kw.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTowNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇩🇪 DE-4 | 9PB
   type: hysteria2
   server: de-by10fuo0kw.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTowNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇩🇪 DE-5 | 9PB
   type: hysteria2
   server: de-by10fuo0kw.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTowNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇩🇪 DE-6 | 9PB
   type: anytls
   server: de-by10fuo0kw.9966690.xyz
@@ -2069,71 +2118,86 @@ proxies:
   server: es.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTksNDk4ZTU2NTd65A==
-  insecure: true
-  mport: 10000-19999
 - name: 🇪🇸 ES-2 | 9PB
   type: hysteria2
   server: es.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTksNDk4ZTU2NTd65A==
-  insecure: true
-  mport: 20000-29999
 - name: 🇪🇸 ES-3 | 9PB
   type: hysteria2
   server: es.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTksNDk4ZTU2NTd65A==
-  insecure: true
-  mport: 30000-39999
 - name: 🇪🇸 ES-4 | 9PB
   type: hysteria2
   server: es.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTksNDk4ZTU2NTd65A==
-  insecure: true
-  mport: 40000-49999
 - name: 🇪🇸 ES-5 | 9PB
   type: hysteria2
   server: es.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTksNDk4ZTU2NTd65A==
-  insecure: true
-  mport: 50000-59999
 - name: 🇪🇸 ES-6 | 9PB
   type: anytls
   server: es.9966690.xyz
@@ -2209,71 +2273,86 @@ proxies:
   server: id.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTo2NTd65A==
-  insecure: true
-  mport: 10000-19999
 - name: 🇮🇩 ID-2 | 9PB
   type: hysteria2
   server: id.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTo2NTd65A==
-  insecure: true
-  mport: 20000-29999
 - name: 🇮🇩 ID-3 | 9PB
   type: hysteria2
   server: id.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTo2NTd65A==
-  insecure: true
-  mport: 30000-39999
 - name: 🇮🇩 ID-4 | 9PB
   type: hysteria2
   server: id.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTo2NTd65A==
-  insecure: true
-  mport: 40000-49999
 - name: 🇮🇩 ID-5 | 9PB
   type: hysteria2
   server: id.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTo2NTd65A==
-  insecure: true
-  mport: 50000-59999
 - name: 🇮🇩 ID-6 | 9PB
   type: anytls
   server: id.9966690.xyz
@@ -2349,71 +2428,86 @@ proxies:
   server: nl.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkdNDk4ZTU2NTd65A==
-  insecure: true
-  mport: 10000-19999
 - name: 🇳🇱 NL-2 | 9PB
   type: hysteria2
   server: nl.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkdNDk4ZTU2NTd65A==
-  insecure: true
-  mport: 20000-29999
 - name: 🇳🇱 NL-3 | 9PB
   type: hysteria2
   server: nl.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkdNDk4ZTU2NTd65A==
-  insecure: true
-  mport: 30000-39999
 - name: 🇳🇱 NL-4 | 9PB
   type: hysteria2
   server: nl.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkdNDk4ZTU2NTd65A==
-  insecure: true
-  mport: 40000-49999
 - name: 🇳🇱 NL-5 | 9PB
   type: hysteria2
   server: nl.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkdNDk4ZTU2NTd65A==
-  insecure: true
-  mport: 50000-59999
 - name: 🇳🇱 NL-6 | 9PB
   type: anytls
   server: nl.9966690.xyz
@@ -2489,71 +2583,86 @@ proxies:
   server: kr.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNpk4ZTU2NTd65A==
-  insecure: true
-  mport: 10000-19999
 - name: 🇰🇷 KR-2 | 9PB
   type: hysteria2
   server: kr.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNpk4ZTU2NTd65A==
-  insecure: true
-  mport: 20000-29999
 - name: 🇰🇷 KR-3 | 9PB
   type: hysteria2
   server: kr.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNpk4ZTU2NTd65A==
-  insecure: true
-  mport: 30000-39999
 - name: 🇰🇷 KR-4 | 9PB
   type: hysteria2
   server: kr.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNpk4ZTU2NTd65A==
-  insecure: true
-  mport: 40000-49999
 - name: 🇰🇷 KR-5 | 9PB
   type: hysteria2
   server: kr.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNpk4ZTU2NTd65A==
-  insecure: true
-  mport: 50000-59999
 - name: 🇰🇷 KR-6 | 9PB
   type: anytls
   server: kr.9966690.xyz
@@ -2629,71 +2738,86 @@ proxies:
   server: in.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NT365A==
-  insecure: true
-  mport: 10000-19999
 - name: 🇮🇳 IN-2 | 9PB
   type: hysteria2
   server: in.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NT365A==
-  insecure: true
-  mport: 20000-29999
 - name: 🇮🇳 IN-3 | 9PB
   type: hysteria2
   server: in.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NT365A==
-  insecure: true
-  mport: 30000-39999
 - name: 🇮🇳 IN-4 | 9PB
   type: hysteria2
   server: in.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NT365A==
-  insecure: true
-  mport: 40000-49999
 - name: 🇮🇳 IN-5 | 9PB
   type: hysteria2
   server: in.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NT365A==
-  insecure: true
-  mport: 50000-59999
 - name: 🇮🇳 IN-6 | 9PB
   type: anytls
   server: in.9966690.xyz
@@ -2769,71 +2893,86 @@ proxies:
   server: cl.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU25T365A==
-  insecure: true
-  mport: 10000-19999
 - name: 🇨🇱 CL-2 | 9PB
   type: hysteria2
   server: cl.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU25T365A==
-  insecure: true
-  mport: 20000-29999
 - name: 🇨🇱 CL-3 | 9PB
   type: hysteria2
   server: cl.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU25T365A==
-  insecure: true
-  mport: 30000-39999
 - name: 🇨🇱 CL-4 | 9PB
   type: hysteria2
   server: cl.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU25T365A==
-  insecure: true
-  mport: 40000-49999
 - name: 🇨🇱 CL-5 | 9PB
   type: hysteria2
   server: cl.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU25T365A==
-  insecure: true
-  mport: 50000-59999
 - name: 🇨🇱 CL-6 | 9PB
   type: anytls
   server: cl.9966690.xyz
@@ -2909,71 +3048,86 @@ proxies:
   server: ch.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU23T365A==
-  insecure: true
-  mport: 10000-19999
 - name: 🇨🇭 CH-2 | 9PB
   type: hysteria2
   server: ch.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU23T365A==
-  insecure: true
-  mport: 20000-29999
 - name: 🇨🇭 CH-3 | 9PB
   type: hysteria2
   server: ch.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU23T365A==
-  insecure: true
-  mport: 30000-39999
 - name: 🇨🇭 CH-4 | 9PB
   type: hysteria2
   server: ch.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU23T365A==
-  insecure: true
-  mport: 40000-49999
 - name: 🇨🇭 CH-5 | 9PB
   type: hysteria2
   server: ch.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU23T365A==
-  insecure: true
-  mport: 50000-59999
 - name: 🇨🇭 CH-6 | 9PB
   type: anytls
   server: ch.9966690.xyz
@@ -3049,71 +3203,86 @@ proxies:
   server: ca-6az7mzjl.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇨🇦 CA-2 | 9PB
   type: hysteria2
   server: ca-6az7mzjl.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇨🇦 CA-3 | 9PB
   type: hysteria2
   server: ca-6az7mzjl.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇨🇦 CA-4 | 9PB
   type: hysteria2
   server: ca-6az7mzjl.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇨🇦 CA-5 | 9PB
   type: hysteria2
   server: ca-6az7mzjl.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇨🇦 CA-6 | 9PB
   type: anytls
   server: ca-6az7mzjl.9966690.xyz
@@ -3189,71 +3358,86 @@ proxies:
   server: il.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇮🇱 IL-2 | 9PB
   type: hysteria2
   server: il.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇮🇱 IL-3 | 9PB
   type: hysteria2
   server: il.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇮🇱 IL-4 | 9PB
   type: hysteria2
   server: il.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇮🇱 IL-5 | 9PB
   type: hysteria2
   server: il.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇮🇱 IL-6 | 9PB
   type: anytls
   server: il.9966690.xyz
@@ -3329,71 +3513,86 @@ proxies:
   server: de-al.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇱🇹 LT-2 | 9PB
   type: hysteria2
   server: de-al.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇱🇹 LT-3 | 9PB
   type: hysteria2
   server: de-al.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇱🇹 LT-4 | 9PB
   type: hysteria2
   server: de-al.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇱🇹 LT-5 | 9PB
   type: hysteria2
   server: de-al.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇱🇹 LT-6 | 9PB
   type: anytls
   server: de-al.9966690.xyz
@@ -3469,71 +3668,86 @@ proxies:
   server: in-hk.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇭🇰 HK-2 | 9PB
   type: hysteria2
   server: in-hk.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇭🇰 HK-3 | 9PB
   type: hysteria2
   server: in-hk.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇭🇰 HK-4 | 9PB
   type: hysteria2
   server: in-hk.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇭🇰 HK-5 | 9PB
   type: hysteria2
   server: in-hk.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇭🇰 HK-6 | 9PB
   type: anytls
   server: in-hk.9966690.xyz
@@ -3609,71 +3823,86 @@ proxies:
   server: usa-lv.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇦🇺 AU-2 | 9PB
   type: hysteria2
   server: usa-lv.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇦🇺 AU-3 | 9PB
   type: hysteria2
   server: usa-lv.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇦🇺 AU-4 | 9PB
   type: hysteria2
   server: usa-lv.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇦🇺 AU-5 | 9PB
   type: hysteria2
   server: usa-lv.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇦🇺 AU-6 | 9PB
   type: anytls
   server: usa-lv.9966690.xyz
@@ -3749,71 +3978,86 @@ proxies:
   server: usa-se.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇸🇪 SE-2 | 9PB
   type: hysteria2
   server: usa-se.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇸🇪 SE-3 | 9PB
   type: hysteria2
   server: usa-se.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇸🇪 SE-4 | 9PB
   type: hysteria2
   server: usa-se.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇸🇪 SE-5 | 9PB
   type: hysteria2
   server: usa-se.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇸🇪 SE-6 | 9PB
   type: anytls
   server: usa-se.9966690.xyz
@@ -3889,71 +4133,86 @@ proxies:
   server: il-tr.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇷🇸 RS-2 | 9PB
   type: hysteria2
   server: il-tr.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇷🇸 RS-3 | 9PB
   type: hysteria2
   server: il-tr.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇷🇸 RS-4 | 9PB
   type: hysteria2
   server: il-tr.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇷🇸 RS-5 | 9PB
   type: hysteria2
   server: il-tr.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇷🇸 RS-6 | 9PB
   type: anytls
   server: il-tr.9966690.xyz
@@ -4029,71 +4288,86 @@ proxies:
   server: il-th.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇷🇺 RU-2 | 9PB
   type: hysteria2
   server: il-th.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇷🇺 RU-3 | 9PB
   type: hysteria2
   server: il-th.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇷🇺 RU-4 | 9PB
   type: hysteria2
   server: il-th.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇷🇺 RU-5 | 9PB
   type: hysteria2
   server: il-th.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇷🇺 RU-6 | 9PB
   type: anytls
   server: il-th.9966690.xyz
@@ -4169,71 +4443,86 @@ proxies:
   server: il-ph.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇹🇭 TH-2 | 9PB
   type: hysteria2
   server: il-ph.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇹🇭 TH-3 | 9PB
   type: hysteria2
   server: il-ph.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇹🇭 TH-4 | 9PB
   type: hysteria2
   server: il-ph.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇹🇭 TH-5 | 9PB
   type: hysteria2
   server: il-ph.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇹🇭 TH-6 | 9PB
   type: anytls
   server: il-ph.9966690.xyz
@@ -4309,71 +4598,86 @@ proxies:
   server: fr-ua.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇷🇴 RO-2 | 9PB
   type: hysteria2
   server: fr-ua.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇷🇴 RO-3 | 9PB
   type: hysteria2
   server: fr-ua.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇷🇴 RO-4 | 9PB
   type: hysteria2
   server: fr-ua.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇷🇴 RO-5 | 9PB
   type: hysteria2
   server: fr-ua.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇷🇴 RO-6 | 9PB
   type: anytls
   server: fr-ua.9966690.xyz
@@ -4449,71 +4753,86 @@ proxies:
   server: es-gr.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇵🇱 PL-2 | 9PB
   type: hysteria2
   server: es-gr.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇵🇱 PL-3 | 9PB
   type: hysteria2
   server: es-gr.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇵🇱 PL-4 | 9PB
   type: hysteria2
   server: es-gr.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇵🇱 PL-5 | 9PB
   type: hysteria2
   server: es-gr.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇵🇱 PL-6 | 9PB
   type: anytls
   server: es-gr.9966690.xyz
@@ -4589,71 +4908,86 @@ proxies:
   server: id-ae.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇸🇬 SG-2 | 9PB
   type: hysteria2
   server: id-ae.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇸🇬 SG-3 | 9PB
   type: hysteria2
   server: id-ae.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇸🇬 SG-4 | 9PB
   type: hysteria2
   server: id-ae.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇸🇬 SG-5 | 9PB
   type: hysteria2
   server: id-ae.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇸🇬 SG-6 | 9PB
   type: anytls
   server: id-ae.9966690.xyz
@@ -4729,71 +5063,86 @@ proxies:
   server: in-kh.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇬🇭 GH-2 | 9PB
   type: hysteria2
   server: in-kh.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇬🇭 GH-3 | 9PB
   type: hysteria2
   server: in-kh.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇬🇭 GH-4 | 9PB
   type: hysteria2
   server: in-kh.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇬🇭 GH-5 | 9PB
   type: hysteria2
   server: in-kh.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇬🇭 GH-6 | 9PB
   type: anytls
   server: in-kh.9966690.xyz
@@ -4869,71 +5218,86 @@ proxies:
   server: de-it.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇯🇵 JP-2 | 9PB
   type: hysteria2
   server: de-it.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇯🇵 JP-3 | 9PB
   type: hysteria2
   server: de-it.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇯🇵 JP-4 | 9PB
   type: hysteria2
   server: de-it.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇯🇵 JP-5 | 9PB
   type: hysteria2
   server: de-it.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇯🇵 JP-6 | 9PB
   type: anytls
   server: de-it.9966690.xyz
@@ -5009,71 +5373,86 @@ proxies:
   server: usp-az.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇿🇦 ZA-2 | 9PB
   type: hysteria2
   server: usp-az.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇿🇦 ZA-3 | 9PB
   type: hysteria2
   server: usp-az.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇿🇦 ZA-4 | 9PB
   type: hysteria2
   server: usp-az.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇿🇦 ZA-5 | 9PB
   type: hysteria2
   server: usp-az.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇿🇦 ZA-6 | 9PB
   type: anytls
   server: usp-az.9966690.xyz
@@ -5149,71 +5528,86 @@ proxies:
   server: fr-fi.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇫🇷 FR-2 | 9PB
   type: hysteria2
   server: fr-fi.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇫🇷 FR-3 | 9PB
   type: hysteria2
   server: fr-fi.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇫🇷 FR-4 | 9PB
   type: hysteria2
   server: fr-fi.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇫🇷 FR-5 | 9PB
   type: hysteria2
   server: fr-fi.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇫🇷 FR-6 | 9PB
   type: anytls
   server: fr-fi.9966690.xyz
@@ -5289,71 +5683,86 @@ proxies:
   server: ca-us-pdkod9z3.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇺🇸 US-12 | 9PB
   type: hysteria2
   server: ca-us-pdkod9z3.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇺🇸 US-13 | 9PB
   type: hysteria2
   server: ca-us-pdkod9z3.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇺🇸 US-14 | 9PB
   type: hysteria2
   server: ca-us-pdkod9z3.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇺🇸 US-15 | 9PB
   type: hysteria2
   server: ca-us-pdkod9z3.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇺🇸 US-16 | 9PB
   type: anytls
   server: ca-us-pdkod9z3.9966690.xyz
@@ -5429,71 +5838,86 @@ proxies:
   server: ma-ybu7mswk.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇲🇦 MA-2 | 9PB
   type: hysteria2
   server: ma-ybu7mswk.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇲🇦 MA-3 | 9PB
   type: hysteria2
   server: ma-ybu7mswk.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇲🇦 MA-4 | 9PB
   type: hysteria2
   server: ma-ybu7mswk.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇲🇦 MA-5 | 9PB
   type: hysteria2
   server: ma-ybu7mswk.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇲🇦 MA-6 | 9PB
   type: anytls
   server: ma-ybu7mswk.9966690.xyz
@@ -5569,71 +5993,86 @@ proxies:
   server: ma-3u3eezc4.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇳🇴 NO-2 | 9PB
   type: hysteria2
   server: ma-3u3eezc4.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇳🇴 NO-3 | 9PB
   type: hysteria2
   server: ma-3u3eezc4.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇳🇴 NO-4 | 9PB
   type: hysteria2
   server: ma-3u3eezc4.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇳🇴 NO-5 | 9PB
   type: hysteria2
   server: ma-3u3eezc4.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇳🇴 NO-6 | 9PB
   type: anytls
   server: ma-3u3eezc4.9966690.xyz
@@ -5709,71 +6148,86 @@ proxies:
   server: il-dvkf6gqt.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇺🇸 US-22 | 9PB
   type: hysteria2
   server: il-dvkf6gqt.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇺🇸 US-23 | 9PB
   type: hysteria2
   server: il-dvkf6gqt.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇺🇸 US-24 | 9PB
   type: hysteria2
   server: il-dvkf6gqt.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇺🇸 US-25 | 9PB
   type: hysteria2
   server: il-dvkf6gqt.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇺🇸 US-26 | 9PB
   type: anytls
   server: il-dvkf6gqt.9966690.xyz
@@ -5849,71 +6303,86 @@ proxies:
   server: il-75ukabtw.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇮🇹 IT-2 | 9PB
   type: hysteria2
   server: il-75ukabtw.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇮🇹 IT-3 | 9PB
   type: hysteria2
   server: il-75ukabtw.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇮🇹 IT-4 | 9PB
   type: hysteria2
   server: il-75ukabtw.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇮🇹 IT-5 | 9PB
   type: hysteria2
   server: il-75ukabtw.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇮🇹 IT-6 | 9PB
   type: anytls
   server: il-75ukabtw.9966690.xyz
@@ -5989,71 +6458,86 @@ proxies:
   server: il-xaangj7j.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇫🇮 FI-2 | 9PB
   type: hysteria2
   server: il-xaangj7j.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇫🇮 FI-3 | 9PB
   type: hysteria2
   server: il-xaangj7j.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇫🇮 FI-4 | 9PB
   type: hysteria2
   server: il-xaangj7j.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇫🇮 FI-5 | 9PB
   type: hysteria2
   server: il-xaangj7j.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇫🇮 FI-6 | 9PB
   type: anytls
   server: il-xaangj7j.9966690.xyz
@@ -6129,71 +6613,86 @@ proxies:
   server: jp-rml8re.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇯🇵 JP-12 | 9PB
   type: hysteria2
   server: jp-rml8re.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇯🇵 JP-13 | 9PB
   type: hysteria2
   server: jp-rml8re.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇯🇵 JP-14 | 9PB
   type: hysteria2
   server: jp-rml8re.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇯🇵 JP-15 | 9PB
   type: hysteria2
   server: jp-rml8re.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇯🇵 JP-16 | 9PB
   type: anytls
   server: jp-rml8re.9966690.xyz
@@ -6269,71 +6768,86 @@ proxies:
   server: sa-0q34za.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇸🇦 SA-2 | 9PB
   type: hysteria2
   server: sa-0q34za.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇸🇦 SA-3 | 9PB
   type: hysteria2
   server: sa-0q34za.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇸🇦 SA-4 | 9PB
   type: hysteria2
   server: sa-0q34za.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇸🇦 SA-5 | 9PB
   type: hysteria2
   server: sa-0q34za.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇸🇦 SA-6 | 9PB
   type: anytls
   server: sa-0q34za.9966690.xyz
@@ -6409,71 +6923,86 @@ proxies:
   server: it-hrgv6p.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇮🇹 IT-12 | 9PB
   type: hysteria2
   server: it-hrgv6p.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇮🇹 IT-13 | 9PB
   type: hysteria2
   server: it-hrgv6p.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇮🇹 IT-14 | 9PB
   type: hysteria2
   server: it-hrgv6p.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇮🇹 IT-15 | 9PB
   type: hysteria2
   server: it-hrgv6p.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇮🇹 IT-16 | 9PB
   type: anytls
   server: it-hrgv6p.9966690.xyz
@@ -6549,71 +7078,86 @@ proxies:
   server: au-b9jflt.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇦🇺 AU-12 | 9PB
   type: hysteria2
   server: au-b9jflt.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇦🇺 AU-13 | 9PB
   type: hysteria2
   server: au-b9jflt.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇦🇺 AU-14 | 9PB
   type: hysteria2
   server: au-b9jflt.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇦🇺 AU-15 | 9PB
   type: hysteria2
   server: au-b9jflt.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇦🇺 AU-16 | 9PB
   type: anytls
   server: au-b9jflt.9966690.xyz
@@ -6689,71 +7233,86 @@ proxies:
   server: ae-s321py.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇦🇪 AE-2 | 9PB
   type: hysteria2
   server: ae-s321py.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇦🇪 AE-3 | 9PB
   type: hysteria2
   server: ae-s321py.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇦🇪 AE-4 | 9PB
   type: hysteria2
   server: ae-s321py.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇦🇪 AE-5 | 9PB
   type: hysteria2
   server: ae-s321py.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇦🇪 AE-6 | 9PB
   type: anytls
   server: ae-s321py.9966690.xyz
@@ -6829,71 +7388,86 @@ proxies:
   server: sa-n73pml.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇦🇿 AZ-2 | 9PB
   type: hysteria2
   server: sa-n73pml.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇦🇿 AZ-3 | 9PB
   type: hysteria2
   server: sa-n73pml.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇦🇿 AZ-4 | 9PB
   type: hysteria2
   server: sa-n73pml.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇦🇿 AZ-5 | 9PB
   type: hysteria2
   server: sa-n73pml.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇦🇿 AZ-6 | 9PB
   type: anytls
   server: sa-n73pml.9966690.xyz
@@ -6969,71 +7543,86 @@ proxies:
   server: jp-bifavm.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇸🇪 SE-12 | 9PB
   type: hysteria2
   server: jp-bifavm.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇸🇪 SE-13 | 9PB
   type: hysteria2
   server: jp-bifavm.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇸🇪 SE-14 | 9PB
   type: hysteria2
   server: jp-bifavm.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇸🇪 SE-15 | 9PB
   type: hysteria2
   server: jp-bifavm.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇸🇪 SE-16 | 9PB
   type: anytls
   server: jp-bifavm.9966690.xyz
@@ -7109,71 +7698,86 @@ proxies:
   server: au-cf5ojv.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇮🇪 IE-2 | 9PB
   type: hysteria2
   server: au-cf5ojv.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇮🇪 IE-3 | 9PB
   type: hysteria2
   server: au-cf5ojv.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇮🇪 IE-4 | 9PB
   type: hysteria2
   server: au-cf5ojv.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇮🇪 IE-5 | 9PB
   type: hysteria2
   server: au-cf5ojv.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇮🇪 IE-6 | 9PB
   type: anytls
   server: au-cf5ojv.9966690.xyz
@@ -7249,71 +7853,86 @@ proxies:
   server: it-rcvptn.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇷🇴 RO-12 | 9PB
   type: hysteria2
   server: it-rcvptn.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇷🇴 RO-13 | 9PB
   type: hysteria2
   server: it-rcvptn.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇷🇴 RO-14 | 9PB
   type: hysteria2
   server: it-rcvptn.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇷🇴 RO-15 | 9PB
   type: hysteria2
   server: it-rcvptn.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇷🇴 RO-16 | 9PB
   type: anytls
   server: it-rcvptn.9966690.xyz
@@ -7389,71 +8008,86 @@ proxies:
   server: ae-0vuie2.9966690.xyz
   port: 10000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 10000-19999
+  server_ports:
+  - 10000:19999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 10000-19999
 - name: 🇲🇾 MY-2 | 9PB
   type: hysteria2
   server: ae-0vuie2.9966690.xyz
   port: 20000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 20000-29999
+  server_ports:
+  - 20000:29999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 20000-29999
 - name: 🇲🇾 MY-3 | 9PB
   type: hysteria2
   server: ae-0vuie2.9966690.xyz
   port: 30000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 30000-39999
+  server_ports:
+  - 30000:39999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 30000-39999
 - name: 🇲🇾 MY-4 | 9PB
   type: hysteria2
   server: ae-0vuie2.9966690.xyz
   port: 40000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 40000-49999
+  server_ports:
+  - 40000:49999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 40000-49999
 - name: 🇲🇾 MY-5 | 9PB
   type: hysteria2
   server: ae-0vuie2.9966690.xyz
   port: 50000
   password: a7c5d30b-ce9b-4e34-b5cb-66f8308790ef
+  sni: iosapps.itunes.apple.com
   skip-cert-verify: true
+  udp: true
+  mport: 50000-59999
+  server_ports:
+  - 50000:59999
   tls:
+    enabled: true
     server_name: iosapps.itunes.apple.com
     insecure: true
-    enabled: true
   obfs: salamander
   obfs-password: YzgyOTkwNDk4ZTU2NTdiNA==
-  insecure: true
-  mport: 50000-59999
 - name: 🇲🇾 MY-6 | 9PB
   type: anytls
   server: ae-0vuie2.9966690.xyz
@@ -7560,125 +8194,408 @@ proxies:
   pbk: 7qP6YKWx5CJXia1qjQoIcD7FRjUBbioaioioI729D34
   sid: 2afe4310
   headerType: none
-- name: 🇮🇪 IE-1 | Lifetime
+- name: 🇦🇪 AE-1 | Lifetime
+  type: vless
+  server: 104.16.72.70
+  port: 8443
+  uuid: 2179012d-4aa6-4acd-9e67-be80d8a63486
+  encryption: none
+  network: xhttp
+  security: tls
+  sni: sa.sorixset.ir
+  servername: sa.sorixset.ir
+  skip-cert-verify: false
+  fp: chrome
+  client-fingerprint: chrome
+  tls: true
+  insecure: false
+  mode: auto
+- name: 🇨🇦 CA-1 | Lifetime
   type: trojan
-  server: 146.70.90.195
-  port: 57452
-  password: t1k169n5zmvvwn96r9ft
-  sni: api-yandex.maps.ru
-  skip-cert-verify: true
-  udp: true
-- name: 🇫🇷 FR-1 | Lifetime
-  type: trojan
-  server: 13.39.35.91
-  port: 22223
-  password: telegram-id-directvpn
-  sni: trojan.burgerip.co.uk
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 US-1 | Lifetime
-  type: ss
-  server: 134.195.101.125
-  port: 2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-- name: 🇺🇸 US-2 | Lifetime
-  type: ss
-  server: 134.195.101.116
-  port: 2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-- name: 🇺🇸 US-3 | Lifetime
-  type: ss
-  server: 134.195.101.117
-  port: 2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-- name: 🇺🇸 US-4 | Lifetime
-  type: ss
-  server: 134.195.101.119
-  port: 2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-- name: 🇺🇸 US-5 | Lifetime
-  type: ss
-  server: 134.195.101.118
-  port: 2377
-  password: t0srmdxrm3xyjnvqz9ewlxb2myq7rjuv
-  plugin: obfs
-  plugin-opts:
-    host: 817aa69.default.nintendo.com:112719
-    mode: tls
-- name: 🇺🇸 US-6 | Lifetime
-  type: vmess
-  server: 82.198.246.37
-  port: 180
-  uuid: d13fc2f5-3e05-4795-81eb-44143a09e552
+  server: 103.177.136.42
+  port: 47909
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
   network: tcp
+  security: tls
+  sni: is.01.naiun.bilibili.com
+  servername: is.01.naiun.bilibili.com
   skip-cert-verify: true
-  alterId: 0
-  http-opts: {}
-  ws-path: /
-- name: 🇺🇸 US-7 | Lifetime
-  type: vmess
-  server: h1.bnm.uw.to
+  insecure: true
+  headerType: none
+- name: 🇺🇸 US-1 | Lifetime
+  type: vless
+  server: 64.186.252.166
   port: 443
-  uuid: 32d7c5c7-ab96-4803-bff3-cb9c67e66a64
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  encryption: none
   network: ws
-  servername: h1.bnm.uw.to
-  skip-cert-verify: true
+  security: tls
+  sni: t1s1.rittbo.kdns.fr
+  servername: t1s1.rittbo.kdns.fr
+  skip-cert-verify: false
+  fp: chrome
+  client-fingerprint: chrome
   ws-opts:
-    path: /32d7c5c7-ab96-4803-bff3-cb9c67e66a64-vm
+    path: /
     headers:
-      HOST: h1.bnm.uw.to
-  h2-opts: {}
-  alterId: 0
-  http-opts: {}
+      Host: t1s1.rittbo.kdns.fr
   tls: true
+  insecure: false
+  ech: cloudflare-ech.com+https://dns.alidns.com/dns-query
+- name: 🇨🇦 CA-2 | Lifetime
+  type: trojan
+  server: 103.177.136.45
+  port: 41943
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  network: tcp
+  security: tls
+  sni: az.01.naiun.bilibili.com
+  servername: az.01.naiun.bilibili.com
+  skip-cert-verify: true
+  insecure: true
+  headerType: none
+- name: 🇴🇲 OM-1 | Lifetime
+  type: trojan
+  server: 103.177.136.45
+  port: 47909
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  network: tcp
+  security: tls
+  sni: is.01.naiun.bilibili.com
+  servername: is.01.naiun.bilibili.com
+  skip-cert-verify: true
+  insecure: true
+  headerType: none
+- name: 🇴🇲 OM-2 | Lifetime
+  type: trojan
+  server: 103.177.136.45
+  port: 45553
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  network: tcp
+  security: tls
+  sni: ch.01.naiun.bilibili.com
+  servername: ch.01.naiun.bilibili.com
+  skip-cert-verify: true
+  insecure: true
+  headerType: none
+- name: 🇹🇼 TW-1 | Lifetime
+  type: vless
+  server: 1.162.17.249
+  port: 49561
+  uuid: 7b3a922b-035d-4113-8bde-af7cf038dde5
+  encryption: none
+  network: tcp
+  security: reality
+  sni: cp.cloudflare.com
+  fp: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: L1zzDZxP35SB--5K9gabk9uH7-jYMKE0wD7LES1-EXg
+    short-id: 7f07cb3f8a5a2bdf
+    server-name: cp.cloudflare.com
+  tls: true
+  pbk: L1zzDZxP35SB--5K9gabk9uH7-jYMKE0wD7LES1-EXg
+  sid: 7f07cb3f8a5a2bdf
+  headerType: none
+- name: 🇴🇲 OM-3 | Lifetime
+  type: trojan
+  server: 103.177.136.42
+  port: 48697
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  network: tcp
+  security: tls
+  sni: gh.01.naiun.bilibili.com
+  servername: gh.01.naiun.bilibili.com
+  skip-cert-verify: true
+  insecure: true
+  headerType: none
+- name: 🇨🇦 CA-3 | Lifetime
+  type: trojan
+  server: 103.177.136.42
+  port: 46424
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  network: tcp
+  security: tls
+  sni: de.01.naiun.bilibili.com
+  servername: de.01.naiun.bilibili.com
+  skip-cert-verify: true
+  insecure: true
+  headerType: none
+- name: 🇴🇲 OM-4 | Lifetime
+  type: trojan
+  server: 103.177.136.42
+  port: 45553
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  network: tcp
+  security: tls
+  sni: ch.01.naiun.bilibili.com
+  servername: ch.01.naiun.bilibili.com
+  skip-cert-verify: true
+  insecure: true
+  headerType: none
+- name: 🇨🇦 CA-4 | Lifetime
+  type: trojan
+  server: 103.177.136.42
+  port: 45619
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  network: tcp
+  security: tls
+  sni: fr.01.naiun.bilibili.com
+  servername: fr.01.naiun.bilibili.com
+  skip-cert-verify: true
+  insecure: true
+  headerType: none
+- name: 🇴🇲 OM-5 | Lifetime
+  type: trojan
+  server: 103.177.136.45
+  port: 48697
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  network: tcp
+  security: tls
+  sni: gh.01.naiun.bilibili.com
+  servername: gh.01.naiun.bilibili.com
+  skip-cert-verify: true
+  insecure: true
+  headerType: none
+- name: 🇨🇦 CA-5 | Lifetime
+  type: trojan
+  server: 103.177.136.45
+  port: 46424
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  network: tcp
+  security: tls
+  sni: de.01.naiun.bilibili.com
+  servername: de.01.naiun.bilibili.com
+  skip-cert-verify: true
+  insecure: true
+  headerType: none
+- name: 🇴🇲 OM-6 | Lifetime
+  type: trojan
+  server: 103.177.136.42
+  port: 41943
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  network: tcp
+  security: tls
+  sni: az.01.naiun.bilibili.com
+  servername: az.01.naiun.bilibili.com
+  skip-cert-verify: true
+  insecure: true
+  headerType: none
+- name: 🇴🇲 OM-7 | Lifetime
+  type: trojan
+  server: 103.177.136.45
+  port: 45619
+  password: 4f4d1167-ef14-4304-9bce-0740472503ef
+  network: tcp
+  security: tls
+  sni: fr.01.naiun.bilibili.com
+  servername: fr.01.naiun.bilibili.com
+  skip-cert-verify: true
+  insecure: true
+  headerType: none
+- name: 🇸🇬 SG-3 | Lifetime
+  type: vless
+  server: 149.28.136.177
+  port: 443
+  uuid: c7d5062b-604e-42b0-85d0-0ba354cee311
+  encryption: none
+  network: tcp
+  security: reality
+  sni: www.apple.com
+  fp: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: KpSo5m7AfnERJz2zbqi_Gqek65yGKzqvMYWiy9cMxCI
+    short-id: 4f3d16240bb853f8
+    server-name: www.apple.com
+  tls: true
+  pbk: KpSo5m7AfnERJz2zbqi_Gqek65yGKzqvMYWiy9cMxCI
+  sid: 4f3d16240bb853f8
+  headerType: none
+- name: 🇰🇷 KR-1 | Lifetime
+  type: trojan
+  server: 131.186.27.112
+  port: 2096
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  security: tls
+  sni: tjsp.hhxaf.cc.cd
+  servername: tjsp.hhxaf.cc.cd
+  skip-cert-verify: false
+  fp: chrome
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+  insecure: false
+  ech: cloudflare-ech.com+https://dns.alidns.com/dns-query
+- name: 🇨🇭 CH-1 | Lifetime
+  type: vless
+  server: 45.195.137.61
+  port: 8443
+  uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
+  encryption: none
+  network: tcp
+  security: reality
+  sni: storage.yandex.net
+  fp: chrome
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
+    short-id: e3d38cee79d4f94c
+    server-name: storage.yandex.net
+  tls: true
+  pbk: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
+  sid: e3d38cee79d4f94c
+  headerType: none
+- name: 🇨🇭 CH-2 | Lifetime
+  type: vless
+  server: 45.195.137.104
+  port: 8443
+  uuid: 7f89560c-b9f0-4c56-b3e0-1b1bdafe0b08
+  encryption: none
+  network: tcp
+  security: reality
+  sni: storage.yandex.net
+  fp: firefox
+  flow: xtls-rprx-vision
+  reality-opts:
+    public-key: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
+    short-id: e3d38cee79d4f94c
+    server-name: storage.yandex.net
+  tls: true
+  pbk: IdqrygjwHBEMCOamBl7a504TVk6uMAtTRj0xLWcFcxY
+  sid: e3d38cee79d4f94c
+  headerType: none
+- name: 🇸🇬 SG-4 | Lifetime
+  type: trojan
+  server: 151.101.1.242
+  port: 443
+  password: Mitivpn
+  network: ws
+  security: tls
+  sni: cdn.gamingdll.ir
+  servername: cdn.gamingdll.ir
+  skip-cert-verify: false
+  fp: firefox
+  client-fingerprint: firefox
+  ws-opts:
+    path: /
+  alpn:
+  - h2
+  insecure: false
 - name: 🇺🇸 US-8 | Lifetime
-  type: trojan
-  server: d1.catcat321.com
-  port: 42531
-  password: 63872b0d-87dd-4474-b690-92773af2922e
-  sni: d.usj1.cat.bilibili.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇺🇸 US-9 | Lifetime
-  type: trojan
-  server: d1.catcat321.com
-  port: 56168
-  password: 7e70223b-f331-41d5-9313-02b8d2df2885
-  sni: d.usj1.cat.bilibili.com
-  skip-cert-verify: true
-  udp: true
-- name: 🇮🇹 IT-1 | Lifetime
-  type: vmess
-  server: sl2.bnm.uw.to
+  type: vless
+  server: 64.186.241.154
   port: 443
-  uuid: bc1f0340-954a-4e69-8676-f916629e6f2a
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  encryption: none
   network: ws
-  servername: SL2.bnm.uw.to
-  skip-cert-verify: true
+  security: tls
+  sni: t1s1.rittbo.kdns.fr
+  servername: t1s1.rittbo.kdns.fr
+  skip-cert-verify: false
+  fp: chrome
+  client-fingerprint: chrome
   ws-opts:
-    path: /bc1f0340-954a-4e69-8676-f916629e6f2a-vm
+    path: /
     headers:
-      HOST: SL2.bnm.uw.to
-  h2-opts: {}
-  alterId: 0
-  http-opts: {}
+      Host: t1s1.rittbo.kdns.fr
   tls: true
+  insecure: false
+  ech: cloudflare-ech.com+https://dns.alidns.com/dns-query
+- name: 🇯🇵 JP-1 | Lifetime
+  type: trojan
+  server: 151.241.129.141
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  security: tls
+  sni: tjsp.hhxaf.cc.cd
+  servername: tjsp.hhxaf.cc.cd
+  skip-cert-verify: false
+  fp: chrome
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: tjsp.hhxaf.cc.cd
+  insecure: false
+  ech: cloudflare-ech.com+https://dns.alidns.com/dns-query
+- name: 🇰🇷 KR-2 | Lifetime
+  type: vless
+  server: kr.kefenhuimin.com
+  port: 9001
+  uuid: dda82e57-02c8-4d0b-9c6c-c2945e5509e5
+  encryption: none
+  network: tcp
+  security: reality
+  sni: www.apple.com
+  fp: chrome
+  reality-opts:
+    public-key: Ep_RxUq0kSY2xhXtVRHJNQPgl3V_T4UGhTzOYXVPQEk
+    short-id: 458ff70ea97eeac2
+    server-name: www.apple.com
+  tls: true
+  pbk: Ep_RxUq0kSY2xhXtVRHJNQPgl3V_T4UGhTzOYXVPQEk
+  sid: 458ff70ea97eeac2
+  spx: /8plvzPVywZCeKNX
+  headerType: none
+- name: 🇰🇷 KR-3 | Lifetime
+  type: trojan
+  server: 211.49.57.175
+  port: 443
+  password: eeb6823c-b926-4ea2-866a-5542edd26e59
+  network: ws
+  security: tls
+  sni: hhcm.hhxaf.cc.cd
+  servername: hhcm.hhxaf.cc.cd
+  skip-cert-verify: false
+  fp: chrome
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: hhcm.hhxaf.cc.cd
+  insecure: false
+  ech: cloudflare-ech.com+https://dns.alidns.com/dns-query
+- name: 🇫🇷 FR-1 | Lifetime
+  type: vless
+  server: store.ubi.com
+  port: 443
+  uuid: eeb6823c-b926-4ea2-866a-5542edd26e59
+  encryption: none
+  network: ws
+  security: tls
+  sni: t1s1.rittbo.kdns.fr
+  servername: t1s1.rittbo.kdns.fr
+  skip-cert-verify: false
+  fp: chrome
+  client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: t1s1.rittbo.kdns.fr
+  tls: true
+  insecure: false
+  ech: cloudflare-ech.com+https://dns.alidns.com/dns-query
+- name: 🇱🇺 LU-1 | Lifetime
+  type: vless
+  server: 45.130.125.6
+  port: 443
+  uuid: ac006062-f051-43c6-bd4c-f409285c8635
+  encryption: none
+  network: xhttp
+  security: tls
+  sni: germany4.alibaba1405.org
+  servername: germany4.alibaba1405.org
+  skip-cert-verify: false
+  fp: chrome
+  client-fingerprint: chrome
+  tls: true
+  insecure: false
+  mode: auto
 - name: 🇭🇰 HK-1 | Sub3
   type: vless
   server: proxy.jinshu1.com
@@ -9349,18 +10266,32 @@ proxy-groups:
   - 🇲🇾 MY-10 | 9PB
   - 🇸🇬 SG-1 [ipv6] | Lifetime
   - 🇸🇬 SG-2 [ipv6] | Lifetime
-  - 🇮🇪 IE-1 | Lifetime
-  - 🇫🇷 FR-1 | Lifetime
+  - 🇦🇪 AE-1 | Lifetime
+  - 🇨🇦 CA-1 | Lifetime
   - 🇺🇸 US-1 | Lifetime
-  - 🇺🇸 US-2 | Lifetime
-  - 🇺🇸 US-3 | Lifetime
-  - 🇺🇸 US-4 | Lifetime
-  - 🇺🇸 US-5 | Lifetime
-  - 🇺🇸 US-6 | Lifetime
-  - 🇺🇸 US-7 | Lifetime
+  - 🇨🇦 CA-2 | Lifetime
+  - 🇴🇲 OM-1 | Lifetime
+  - 🇴🇲 OM-2 | Lifetime
+  - 🇹🇼 TW-1 | Lifetime
+  - 🇴🇲 OM-3 | Lifetime
+  - 🇨🇦 CA-3 | Lifetime
+  - 🇴🇲 OM-4 | Lifetime
+  - 🇨🇦 CA-4 | Lifetime
+  - 🇴🇲 OM-5 | Lifetime
+  - 🇨🇦 CA-5 | Lifetime
+  - 🇴🇲 OM-6 | Lifetime
+  - 🇴🇲 OM-7 | Lifetime
+  - 🇸🇬 SG-3 | Lifetime
+  - 🇰🇷 KR-1 | Lifetime
+  - 🇨🇭 CH-1 | Lifetime
+  - 🇨🇭 CH-2 | Lifetime
+  - 🇸🇬 SG-4 | Lifetime
   - 🇺🇸 US-8 | Lifetime
-  - 🇺🇸 US-9 | Lifetime
-  - 🇮🇹 IT-1 | Lifetime
+  - 🇯🇵 JP-1 | Lifetime
+  - 🇰🇷 KR-2 | Lifetime
+  - 🇰🇷 KR-3 | Lifetime
+  - 🇫🇷 FR-1 | Lifetime
+  - 🇱🇺 LU-1 | Lifetime
   - 🇭🇰 HK-1 | Sub3
   - 🇭🇰 HK-2 | Sub3
   - 🇭🇰 HK-3 | Sub3
@@ -9961,18 +10892,32 @@ proxy-groups:
   proxies:
   - 🇸🇬 SG-1 [ipv6] | Lifetime
   - 🇸🇬 SG-2 [ipv6] | Lifetime
-  - 🇮🇪 IE-1 | Lifetime
-  - 🇫🇷 FR-1 | Lifetime
+  - 🇦🇪 AE-1 | Lifetime
+  - 🇨🇦 CA-1 | Lifetime
   - 🇺🇸 US-1 | Lifetime
-  - 🇺🇸 US-2 | Lifetime
-  - 🇺🇸 US-3 | Lifetime
-  - 🇺🇸 US-4 | Lifetime
-  - 🇺🇸 US-5 | Lifetime
-  - 🇺🇸 US-6 | Lifetime
-  - 🇺🇸 US-7 | Lifetime
+  - 🇨🇦 CA-2 | Lifetime
+  - 🇴🇲 OM-1 | Lifetime
+  - 🇴🇲 OM-2 | Lifetime
+  - 🇹🇼 TW-1 | Lifetime
+  - 🇴🇲 OM-3 | Lifetime
+  - 🇨🇦 CA-3 | Lifetime
+  - 🇴🇲 OM-4 | Lifetime
+  - 🇨🇦 CA-4 | Lifetime
+  - 🇴🇲 OM-5 | Lifetime
+  - 🇨🇦 CA-5 | Lifetime
+  - 🇴🇲 OM-6 | Lifetime
+  - 🇴🇲 OM-7 | Lifetime
+  - 🇸🇬 SG-3 | Lifetime
+  - 🇰🇷 KR-1 | Lifetime
+  - 🇨🇭 CH-1 | Lifetime
+  - 🇨🇭 CH-2 | Lifetime
+  - 🇸🇬 SG-4 | Lifetime
   - 🇺🇸 US-8 | Lifetime
-  - 🇺🇸 US-9 | Lifetime
-  - 🇮🇹 IT-1 | Lifetime
+  - 🇯🇵 JP-1 | Lifetime
+  - 🇰🇷 KR-2 | Lifetime
+  - 🇰🇷 KR-3 | Lifetime
+  - 🇫🇷 FR-1 | Lifetime
+  - 🇱🇺 LU-1 | Lifetime
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
