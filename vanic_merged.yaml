@@ -1,7 +1,7 @@
 # 合并 Vanic24/VPN 订阅
 # 源: 8EB, 9PB, Lifetime, Sub3, Filter (MIX socks5 因 mihomo 不支持入站 socks5 已排除)
-# 生成时间: 2026-07-01 10:10:10 UTC
-# 节点: 627 (去重前 658)  策略组: 7
+# 生成时间: 2026-07-01 15:10:16 UTC
+# 节点: 649 (去重前 678)  策略组: 7
 port: 7890
 socks-port: 7891
 allow-lan: false
@@ -9918,6 +9918,16 @@ proxies:
   obfs-password: 8zzng75tz4tf82pj
   tfo: false
   udp: true
+- name: 🇺🇸 US-1 | Filter
+  type: hysteria2
+  server: 134.195.101.199
+  port: 443
+  password: f872264a-664a-4b6a-84e8-516a39099860
+  sni: www.apple.com
+  servername: www.apple.com
+  skip-cert-verify: true
+  tfo: false
+  udp: true
 - name: 🇨🇭 CH-1 | Filter
   type: vless
   server: 83.228.235.106
@@ -9992,7 +10002,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   tfo: false
   udp: false
-- name: 🇺🇸 US-1 | Filter
+- name: 🇺🇸 US-2 | Filter
   type: vless
   server: 185.170.154.202
   port: 443
@@ -10039,7 +10049,7 @@ proxies:
   flow: xtls-rprx-vision
   tfo: false
   udp: false
-- name: 🇳🇱 NL-2 | Filter
+- name: 🇳🇱 NL-1 | Filter
   type: vless
   server: nl08.abvpn.ru
   port: 443
@@ -10052,90 +10062,442 @@ proxies:
   tls: true
   tfo: false
   udp: false
-- name: 🇺🇸 US-2 | Filter
+- name: 🇱🇹 LT-1 | Filter
   type: vless
-  server: wangcai2@47.93.235.180
-  port: 443
-  uuid: 'Telegram🇨🇳 '
-  network: ws
-  sni: support.zoom.us.yxls.eu.cc
-  servername: support.zoom.us.yxls.eu.cc
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /sg-melbi
-    headers:
-      Host: support.zoom.us.yxls.eu.cc
-  tls: true
-  tfo: false
-  udp: false
-- name: 🇬🇧 GB-2 | Filter
-  type: vless
-  server: nr.cnkstore.ru
+  server: cherry-lt-01.live
   port: 8443
-  uuid: 501c1f83-a390-4b93-99db-7f57d0111573
-  sni: iv.kommersant.ru
-  servername: iv.kommersant.ru
+  uuid: a1472a7d-ca70-4490-a5a5-81537599861c
+  sni: storage.yandex.net
+  servername: storage.yandex.net
   skip-cert-verify: true
   client-fingerprint: chrome
   tls: true
   reality-opts:
-    public-key: v9tl1F7ZGdPeudN3tsHw02vvOpLOvhGBUEjgeCtsvQk
-    short-id: fe74a5e0a6
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
+  flow: xtls-rprx-vision
   tfo: false
   udp: false
-- name: 🇳🇱 NL-3 | Filter
+- name: 🇩🇪 DE-2 | Filter
   type: vless
-  server: 89.105.206.151
-  port: 443
-  uuid: 15634a62-7add-473b-a76c-cf26d158850d
-  sni: nl.quattro-tech.ru
-  servername: nl.quattro-tech.ru
+  server: mio.game2lizard.com
+  port: 2087
+  uuid: 527561c6-bed1-44c5-8404-f322fbf7ced2
+  network: xhttp
+  sni: liz11.jooje.lat
+  servername: liz11.jooje.lat
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  xhttp-opts:
+    host: liz11.jooje.lat
+    headers:
+      Host: liz11.jooje.lat
+    mode: auto
+  tls: true
+  tfo: false
+  udp: false
+- name: 🇩🇪 DE-3 | Filter
+  type: vless
+  server: gr.eorqen.ir
+  port: 8086
+  uuid: 527561c6-bed1-44c5-8404-f322fbf7ced2
+  skip-cert-verify: true
+  tfo: false
+  udp: false
+- name: 🇩🇪 DE-4 | Filter
+  type: vless
+  server: gr1.fifapes.monster
+  port: 8882
+  uuid: eab915bc-d2df-73d1-47d0-6eb240497055
+  skip-cert-verify: true
+  tfo: false
+  udp: false
+- name: 🇮🇳 IN-1 | Filter
+  type: vless
+  server: azure.amy.xxnqwq.xyz
+  port: 53706
+  uuid: a2af9b94-424f-4164-a412-19cd3d60bad6
+  sni: azure.microsoft.com
+  servername: azure.microsoft.com
   skip-cert-verify: true
   client-fingerprint: chrome
   tls: true
   reality-opts:
-    public-key: 10rVZPoOUP1TlQviIAsQ_jAROX0fRQxH0C92nq_zGQc
-    short-id: 43dcff53849b81e6
+    public-key: yZaQ8J1BVVRTWR9cLkREFMSEUPOc1TqIxaZj8qHXgGY
+    short-id: 61a09340
   flow: xtls-rprx-vision
+  tfo: false
+  udp: false
+- name: 🇳🇱 NL-2 | Filter
+  type: vless
+  server: reseau.proxy.rlwy.net
+  port: 56136
+  uuid: namedzadim
+  network: xhttp
+  sni: is1-ssl.mzstatic.com
+  servername: is1-ssl.mzstatic.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  xhttp-opts:
+    path: /
+    host: is1-ssl.mzstatic.com
+    headers:
+      Host: is1-ssl.mzstatic.com
+    mode: auto
+  tls: true
+  reality-opts:
+    public-key: -GTzRXjKWYHqlSb2VXLTsESJDNXVCRREc02FpVXmFRw
+    short-id: '6641'
+  tfo: false
+  udp: false
+- name: 🇺🇸 US-3 | Filter
+  type: vless
+  server: maconnectt@kodama.proxy.rlwy.net
+  port: 10190
+  uuid: ''
+  network: xhttp
+  sni: is1-ssl.mzstatic.com
+  servername: is1-ssl.mzstatic.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  xhttp-opts:
+    path: /
+    host: is1-ssl.mzstatic.com
+    headers:
+      Host: is1-ssl.mzstatic.com
+    mode: auto
+  tls: true
+  reality-opts:
+    public-key: PIX-ygua_q9rdrrSca3wR0q7S1Ifnnu9ZmUAPw99tX4
+    short-id: 01f96a282febe792
+  tfo: false
+  udp: false
+  _auth: ''
+  _security: reality
+  _sni: is1-ssl.mzstatic.com
+  _network: xhttp
+  _path: ''
+- name: 🇫🇷 FR-1 | Filter
+  type: vless
+  server: mio2.game2lizard.com
+  port: 2087
+  uuid: 527561c6-bed1-44c5-8404-f322fbf7ced2
+  network: xhttp
+  sni: fr0.eorqen.ir
+  servername: fr0.eorqen.ir
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  xhttp-opts:
+    host: fr0.eorqen.ir
+    headers:
+      Host: fr0.eorqen.ir
+    mode: auto
+  tls: true
   tfo: false
   udp: false
 - name: 🇯🇵 JP-1 | Filter
   type: vless
-  server: 8.211.156.41
-  port: 54877
-  uuid: 1c8b4674-43f5-4876-c539-e6536994072d
-  skip-cert-verify: true
-  tfo: false
-  udp: false
-- name: 🇳🇱 NL-4 | Filter
-  type: vless
-  server: 89.124.64.16
-  port: 443
-  uuid: fd5f3dfa-bba9-4205-b95f-ac37b8587cda
-  sni: www.sony.com
-  servername: www.sony.com
+  server: awsjpxt.xxnqwq.xyz
+  port: 51142
+  uuid: a2af9b94-424f-4164-a412-19cd3d60bad6
+  sni: akamai.com
+  servername: akamai.com
   skip-cert-verify: true
   client-fingerprint: chrome
   tls: true
   reality-opts:
-    public-key: UGKx4Kydrtu6oCJJPXOtR57bzIUIPK9meIy5ubEDHQM
-    short-id: '94'
+    public-key: diGYsk8Kc-8L7bpxxT68Jrw7WpNzi1fs4Wr6zNn2WAM
+    short-id: cb99de
+  flow: xtls-rprx-vision
+  tfo: false
+  udp: false
+- name: 🇨🇭 CH-3 | Filter
+  type: vless
+  server: kim1.wiziii.xyz
+  port: 2083
+  uuid: 4a836d89-0655-4c77-9702-b47219afaa5d
+  network: xhttp
+  sni: wiz3.jooje.lat
+  servername: wiz3.jooje.lat
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  xhttp-opts:
+    path: /
+    host: wiz3.jooje.lat
+    headers:
+      Host: wiz3.jooje.lat
+    mode: auto
+  tls: true
+  tfo: false
+  udp: false
+- name: 🇹🇷 TR-1 | Filter
+  type: vless
+  server: connect.nyxserver.ir
+  port: 80
+  uuid: 980282fd-25e7-4b99-bdb2-2c9d276a775e
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /arvan-tuel
+    headers:
+      Host: connect.nyxserver.ir
+  tfo: false
+  udp: false
+- name: 🇨🇦 CA-1 | Filter
+  type: vless
+  server: panel.abolisub2.ir
+  port: 2035
+  uuid: 91f5ca72-291d-4b35-a0b1-462fef70c788
+  network: xhttp
+  skip-cert-verify: true
+  xhttp-opts:
+    path: /
+    mode: auto
+  tfo: false
+  udp: false
+- name: 🇭🇺 HU-1 | Filter
+  type: vless
+  server: dp-hu-01.live
+  port: 443
+  uuid: 43df00c9-f209-4773-b1cc-48e175bfb606
+  sni: storage.yandex.net
+  servername: storage.yandex.net
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
+    short-id: f4b4a6365558ea2e
+  flow: xtls-rprx-vision
+  tfo: false
+  udp: false
+- name: 🇺🇸 US-4 | Filter
+  type: vless
+  server: maconnectt@reseau.proxy.rlwy.net
+  port: 10328
+  uuid: ''
+  network: xhttp
+  sni: is1-ssl.mzstatic.com
+  servername: is1-ssl.mzstatic.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  xhttp-opts:
+    path: /
+    host: is1-ssl.mzstatic.com
+    headers:
+      Host: is1-ssl.mzstatic.com
+    mode: auto
+  tls: true
+  reality-opts:
+    public-key: thcv3ZEg6P7Nv3APjZYTDyDhJA-JSC9YSa0-f81_wyk
+    short-id: b8
+  tfo: false
+  udp: false
+  _auth: ''
+  _security: reality
+  _sni: is1-ssl.mzstatic.com
+  _network: xhttp
+  _path: ''
+- name: 🇮🇩 ID-1 | Filter
+  type: vless
+  server: azure.amy.xxnqwq.xyz
+  port: 51349
+  uuid: a2af9b94-424f-4164-a412-19cd3d60bad6
+  sni: azure.microsoft.com
+  servername: azure.microsoft.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: yZaQ8J1BVVRTWR9cLkREFMSEUPOc1TqIxaZj8qHXgGY
+    short-id: 61a09340
+  flow: xtls-rprx-vision
+  tfo: false
+  udp: false
+- name: 🇳🇱 NL-3 | Filter
+  type: vless
+  server: azure.amy.xxnqwq.xyz
+  port: 1153
+  uuid: a2af9b94-424f-4164-a412-19cd3d60bad6
+  sni: azure.microsoft.com
+  servername: azure.microsoft.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: yZaQ8J1BVVRTWR9cLkREFMSEUPOc1TqIxaZj8qHXgGY
+    short-id: 61a09340
+  flow: xtls-rprx-vision
+  tfo: false
+  udp: false
+- name: 🇸🇬 SG-2 | Filter
+  type: vless
+  server: azure.amy.xxnqwq.xyz
+  port: 51144
+  uuid: a2af9b94-424f-4164-a412-19cd3d60bad6
+  sni: akamai.com
+  servername: akamai.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: diGYsk8Kc-8L7bpxxT68Jrw7WpNzi1fs4Wr6zNn2WAM
+    short-id: cb99de
   flow: xtls-rprx-vision
   tfo: false
   udp: false
 - name: 🇭🇰 HK-1 | Filter
-  type: vmess
-  server: planb.mojcn.com
-  port: 16622
-  uuid: 2a81d8b1-0c20-48b4-9638-cd68d8f68ea3
-  network: ws
+  type: vless
+  server: vip.bcjdvip.com
+  port: 14005
+  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
+  sni: apple.com
+  servername: apple.com
   skip-cert-verify: true
+  client-fingerprint: safari
+  tls: true
+  reality-opts:
+    public-key: sKWozGVep6wrIm63253QviGBtMLVrGB_W1JJHLEHi0s
+    short-id: 97a01dfaef
+  flow: xtls-rprx-vision
+  tfo: false
+  udp: false
+- name: 🇳🇱 NL-4 | Filter
+  type: vless
+  server: 52.222.136.195
+  port: 443
+  uuid: 3da8ec10-c083-45b4-9c42-2ce3c5128f82
+  network: ws
+  sni: moon.nocturnbit.online
+  servername: moon.nocturnbit.online
+  skip-cert-verify: true
+  client-fingerprint: chrome
   ws-opts:
-    path: /
+    path: /xray
     headers:
-      Host: 0513354beac93370008fd6be3cdf9ff1.mobgslb.tbcache.com
-  alterId: 0
+      Host: moon.nocturnbit.online
+  tls: true
+  tfo: false
+  udp: false
+- name: 🇭🇰 HK-2 | Filter
+  type: vless
+  server: vip.bcjdvip.com
+  port: 14007
+  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
+  sni: apple.com
+  servername: apple.com
+  skip-cert-verify: true
+  client-fingerprint: safari
+  tls: true
+  reality-opts:
+    public-key: wybFjQzLnkKIaaTEhwp_N9UXU8miqds9U__P971YHlU
+    short-id: 1d89ebb78c
+  flow: xtls-rprx-vision
+  tfo: false
+  udp: false
+- name: 🇭🇰 HK-3 | Filter
+  type: vless
+  server: vip.bcjdvip.com
+  port: 14001
+  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
+  sni: apple.com
+  servername: apple.com
+  skip-cert-verify: true
+  client-fingerprint: safari
+  tls: true
+  reality-opts:
+    public-key: Iy9qptuQLY7JphySdvf09hOBj6Ym76Sxj1rIwS4Qmnk
+    short-id: '16'
+  flow: xtls-rprx-vision
+  tfo: false
+  udp: false
+- name: 🇭🇰 HK-4 | Filter
+  type: vless
+  server: vip.bcjdvip.com
+  port: 14002
+  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
+  sni: apple.com
+  servername: apple.com
+  skip-cert-verify: true
+  client-fingerprint: safari
+  tls: true
+  reality-opts:
+    public-key: D4eZTpgaPV_2YQa7cbiDMGnZs6NBEU2JkfUroHpvoWs
+    short-id: 7cabb05b68f63b
+  flow: xtls-rprx-vision
+  tfo: false
+  udp: false
+- name: 🇭🇰 HK-5 | Filter
+  type: vless
+  server: vip.bcjdvip.com
+  port: 14008
+  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
+  sni: apple.com
+  servername: apple.com
+  skip-cert-verify: true
+  client-fingerprint: firefox
+  tls: true
+  reality-opts:
+    public-key: WQP0QFc9RlOg7TDAI2i_VNQEtFwB_5kE5AKykeIipm0
+    short-id: 8e5d94464f
+  flow: xtls-rprx-vision
+  tfo: false
+  udp: false
+- name: 🇭🇰 HK-6 | Filter
+  type: vless
+  server: vip.bcjdvip.com
+  port: 14009
+  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
+  sni: apple.com
+  servername: apple.com
+  skip-cert-verify: true
+  client-fingerprint: safari
+  tls: true
+  reality-opts:
+    public-key: CAFHM6x5kO2ofkpEDelcOJlZ4i6Kw4ZlDNIfdV6ptUw
+    short-id: 6a1a47
+  flow: xtls-rprx-vision
+  tfo: false
+  udp: false
+- name: 🇭🇰 HK-7 | Filter
+  type: vless
+  server: vip.bcjdvip.com
+  port: 14006
+  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
+  sni: apple.com
+  servername: apple.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: XPLe-686APp5RHaiFHZDTJsf1kMo-aMZuKjKeHmdyEM
+    short-id: ff5ebee2264c
+  flow: xtls-rprx-vision
+  tfo: false
+  udp: false
+- name: 🇭🇰 HK-8 | Filter
+  type: vless
+  server: vip.bcjdvip.com
+  port: 14004
+  uuid: 3e06720a-86f0-49b9-8f00-062681e3b385
+  sni: apple.com
+  servername: apple.com
+  skip-cert-verify: true
+  client-fingerprint: chrome
+  tls: true
+  reality-opts:
+    public-key: zSt5a1vs3C3oxm3fSUB_egA98IO3XZr7JGzE6OdMTz8
+    short-id: 22c485f4000241
+  flow: xtls-rprx-vision
+  tfo: false
+  udp: false
+- name: 🇺🇸 US-5 | Filter
+  type: vmess
+  server: v29.hdacd.com
+  port: 30829
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  skip-cert-verify: true
+  alterId: 2
   tfo: false
   udp: false
 proxy-groups:
@@ -10763,21 +11125,43 @@ proxy-groups:
   - 🇺🇦 UA-1 | Sub3
   - 🇺🇸 US-8 | Sub3
   - 🇫🇮 FI-1 | Filter
+  - 🇺🇸 US-1 | Filter
   - 🇨🇭 CH-1 | Filter
   - 🇸🇬 SG-1 | Filter
   - 🇨🇭 CH-2 | Filter
   - 🇰🇷 KR-1 | Filter
   - 🇩🇪 DE-1 | Filter
-  - 🇺🇸 US-1 | Filter
+  - 🇺🇸 US-2 | Filter
   - 🇬🇧 GB-1 | Filter
   - 🇸🇪 SE-1 | Filter
+  - 🇳🇱 NL-1 | Filter
+  - 🇱🇹 LT-1 | Filter
+  - 🇩🇪 DE-2 | Filter
+  - 🇩🇪 DE-3 | Filter
+  - 🇩🇪 DE-4 | Filter
+  - 🇮🇳 IN-1 | Filter
   - 🇳🇱 NL-2 | Filter
-  - 🇺🇸 US-2 | Filter
-  - 🇬🇧 GB-2 | Filter
-  - 🇳🇱 NL-3 | Filter
+  - 🇺🇸 US-3 | Filter
+  - 🇫🇷 FR-1 | Filter
   - 🇯🇵 JP-1 | Filter
-  - 🇳🇱 NL-4 | Filter
+  - 🇨🇭 CH-3 | Filter
+  - 🇹🇷 TR-1 | Filter
+  - 🇨🇦 CA-1 | Filter
+  - 🇭🇺 HU-1 | Filter
+  - 🇺🇸 US-4 | Filter
+  - 🇮🇩 ID-1 | Filter
+  - 🇳🇱 NL-3 | Filter
+  - 🇸🇬 SG-2 | Filter
   - 🇭🇰 HK-1 | Filter
+  - 🇳🇱 NL-4 | Filter
+  - 🇭🇰 HK-2 | Filter
+  - 🇭🇰 HK-3 | Filter
+  - 🇭🇰 HK-4 | Filter
+  - 🇭🇰 HK-5 | Filter
+  - 🇭🇰 HK-6 | Filter
+  - 🇭🇰 HK-7 | Filter
+  - 🇭🇰 HK-8 | Filter
+  - 🇺🇸 US-5 | Filter
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -11420,21 +11804,43 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇫🇮 FI-1 | Filter
+  - 🇺🇸 US-1 | Filter
   - 🇨🇭 CH-1 | Filter
   - 🇸🇬 SG-1 | Filter
   - 🇨🇭 CH-2 | Filter
   - 🇰🇷 KR-1 | Filter
   - 🇩🇪 DE-1 | Filter
-  - 🇺🇸 US-1 | Filter
+  - 🇺🇸 US-2 | Filter
   - 🇬🇧 GB-1 | Filter
   - 🇸🇪 SE-1 | Filter
+  - 🇳🇱 NL-1 | Filter
+  - 🇱🇹 LT-1 | Filter
+  - 🇩🇪 DE-2 | Filter
+  - 🇩🇪 DE-3 | Filter
+  - 🇩🇪 DE-4 | Filter
+  - 🇮🇳 IN-1 | Filter
   - 🇳🇱 NL-2 | Filter
-  - 🇺🇸 US-2 | Filter
-  - 🇬🇧 GB-2 | Filter
-  - 🇳🇱 NL-3 | Filter
+  - 🇺🇸 US-3 | Filter
+  - 🇫🇷 FR-1 | Filter
   - 🇯🇵 JP-1 | Filter
-  - 🇳🇱 NL-4 | Filter
+  - 🇨🇭 CH-3 | Filter
+  - 🇹🇷 TR-1 | Filter
+  - 🇨🇦 CA-1 | Filter
+  - 🇭🇺 HU-1 | Filter
+  - 🇺🇸 US-4 | Filter
+  - 🇮🇩 ID-1 | Filter
+  - 🇳🇱 NL-3 | Filter
+  - 🇸🇬 SG-2 | Filter
   - 🇭🇰 HK-1 | Filter
+  - 🇳🇱 NL-4 | Filter
+  - 🇭🇰 HK-2 | Filter
+  - 🇭🇰 HK-3 | Filter
+  - 🇭🇰 HK-4 | Filter
+  - 🇭🇰 HK-5 | Filter
+  - 🇭🇰 HK-6 | Filter
+  - 🇭🇰 HK-7 | Filter
+  - 🇭🇰 HK-8 | Filter
+  - 🇺🇸 US-5 | Filter
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
