@@ -1,7 +1,7 @@
 # 合并 Vanic24/VPN 订阅
 # 源: 8EB, 9PB, Lifetime, Sub3, Filter (MIX socks5 因 mihomo 不支持入站 socks5 已排除)
-# 生成时间: 2026-07-04 03:58:28 UTC
-# 节点: 640 (去重前 656)  策略组: 7
+# 生成时间: 2026-07-04 08:49:24 UTC
+# 节点: 662 (去重前 681)  策略组: 7
 port: 7890
 socks-port: 7891
 allow-lan: false
@@ -9369,6 +9369,267 @@ proxies:
   pbk: 7qP6YKWx5CJXia1qjQoIcD7FRjUBbioaioioI729D34
   sid: 2afe4310
   headerType: none
+- name: 🇩🇪 DE-1 | Lifetime
+  type: trojan
+  server: 213.108.20.209
+  port: 42549
+  password: SoftNetConnect
+  sni: www.speedtest.net
+  skip-cert-verify: true
+  udp: true
+- name: 🇫🇷 FR-1 | Lifetime
+  type: ss
+  server: 15.237.74.149
+  port: 443
+  password: amazonskr05
+  udp: true
+- name: 🇳🇱 NL-1 | Lifetime
+  type: vmess
+  server: select-hk.ddnskunlun.com
+  port: 9006
+  uuid: a8bcce43-abda-315b-8e81-e3e65bcb3d07
+  network: tcp
+  skip-cert-verify: true
+  h2-opts: {}
+  alterId: 0
+  http-opts: {}
+- name: 🇷🇴 RO-1 | Lifetime
+  type: http
+  server: 193.176.84.32
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  _auth: ''
+  _security: tls
+  _sni: ''
+  _network: tcp
+  _path: ''
+- name: 🇷🇴 RO-2 | Lifetime
+  type: http
+  server: 193.176.84.31
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  _auth: ''
+  _security: tls
+  _sni: ''
+  _network: tcp
+  _path: ''
+- name: 🇷🇴 RO-3 | Lifetime
+  type: http
+  server: 193.176.84.37
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  _auth: ''
+  _security: tls
+  _sni: ''
+  _network: tcp
+  _path: ''
+- name: 🇷🇴 RO-4 | Lifetime
+  type: http
+  server: 84.239.49.187
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  _auth: ''
+  _security: tls
+  _sni: ''
+  _network: tcp
+  _path: ''
+- name: 🇷🇴 RO-5 | Lifetime
+  type: http
+  server: 84.239.49.247
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  _auth: ''
+  _security: tls
+  _sni: ''
+  _network: tcp
+  _path: ''
+- name: 🇷🇴 RO-6 | Lifetime
+  type: http
+  server: 84.239.49.235
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  _auth: ''
+  _security: tls
+  _sni: ''
+  _network: tcp
+  _path: ''
+- name: 🇷🇴 RO-7 | Lifetime
+  type: http
+  server: 84.239.49.219
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  _auth: ''
+  _security: tls
+  _sni: ''
+  _network: tcp
+  _path: ''
+- name: 🇷🇴 RO-8 | Lifetime
+  type: http
+  server: 84.239.49.202
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  _auth: ''
+  _security: tls
+  _sni: ''
+  _network: tcp
+  _path: ''
+- name: 🇷🇴 RO-9 | Lifetime
+  type: http
+  server: 84.239.49.196
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  _auth: ''
+  _security: tls
+  _sni: ''
+  _network: tcp
+  _path: ''
+- name: 🇷🇴 RO-10 | Lifetime
+  type: http
+  server: 84.239.49.211
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  _auth: ''
+  _security: tls
+  _sni: ''
+  _network: tcp
+  _path: ''
+- name: 🇷🇴 RO-11 | Lifetime
+  type: http
+  server: 84.239.49.204
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  _auth: ''
+  _security: tls
+  _sni: ''
+  _network: tcp
+  _path: ''
+- name: 🇷🇴 RO-12 | Lifetime
+  type: http
+  server: 84.239.49.57
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  _auth: ''
+  _security: tls
+  _sni: ''
+  _network: tcp
+  _path: ''
+- name: 🇷🇴 RO-13 | Lifetime
+  type: http
+  server: 84.239.49.185
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  _auth: ''
+  _security: tls
+  _sni: ''
+  _network: tcp
+  _path: ''
+- name: 🇷🇴 RO-14 | Lifetime
+  type: http
+  server: 84.239.49.209
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  _auth: ''
+  _security: tls
+  _sni: ''
+  _network: tcp
+  _path: ''
+- name: 🇷🇴 RO-15 | Lifetime
+  type: http
+  server: 84.239.49.159
+  port: 9002
+  skip-cert-verify: true
+  tls: true
+  udp: true
+  _auth: ''
+  _security: tls
+  _sni: ''
+  _network: tcp
+  _path: ''
+- name: 🇺🇸 US-1 | Lifetime
+  type: trojan
+  server: 18.162.53.72
+  port: 34638
+  password: BxceQaOe
+  sni: t.me%2Fripaojiedian
+  skip-cert-verify: true
+  udp: true
+- name: 🇺🇸 US-2 | Lifetime
+  type: ss
+  server: 3.133.132.79
+  port: 443
+  password: amazonskr05
+  udp: true
+- name: 🇯🇵 JP-1 | Lifetime
+  type: vmess
+  server: v6.hdacd.com
+  port: 30806
+  uuid: cbb3f877-d1fb-344c-87a9-d153bffd5484
+  network: tcp
+  servername: v6.hdacd.com
+  skip-cert-verify: true
+  h2-opts: {}
+  alterId: 2
+  http-opts: {}
+- name: 🇯🇵 JP-2 | Lifetime
+  type: ss
+  server: ss.042.node-for-bigairport.win
+  port: 19000
+  password: 792e0bdb-01db-450c-94c4-925151eb396e
+- name: 🇹🇷 TR-1 | Lifetime
+  type: trojan
+  server: auto.mhjstudio.ir
+  port: 443
+  password: dfdse334053vuohm
+  network: ws
+  sni: alternative.mhjstudio.ir
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: alternative.mhjstudio.ir
+  udp: true
+- name: 🇬🇧 GB-1 | Lifetime
+  type: vmess
+  server: 104.17.124.179
+  port: 80
+  uuid: f8975871-a7a0-4906-8835-a23c1258ca1e
+  network: ws
+  skip-cert-verify: true
+  ws-opts:
+    path: /
+    headers:
+      Host: google.whatsapp.snapp.torob.basalam.zula.uplaod-music.ir.
+  alterId: 0
+  tls: false
+  udp: true
 - name: 🇯🇵 JP-1 | Sub3
   type: vless
   server: jp1-r.link-t7.com
@@ -10000,56 +10261,38 @@ proxies:
     headers:
       Host: ty986gfazs.cainiaohub.xyz
   tls: true
-- name: 🇭🇰 HK-10 | Sub3
-  type: vless
-  server: 207.174.133.175
-  port: 10000
-  uuid: d26598cf-2cdf-4219-80d0-94646dff160d
-  encryption: none
-  network: tcp
-  security: none
-  headerType: none
-- name: 🇭🇰 HK-11 | Sub3
-  type: vless
-  server: 207.174.133.170
-  port: 10000
-  uuid: d26598cf-2cdf-4219-80d0-94646dff160d
-  encryption: none
-  network: tcp
-  security: none
-  headerType: none
 - name: 🇨🇳 CN-3 | Sub3
   type: vless
-  server: 61.221.84.90
+  server: 61.221.84.106
   port: 10000
-  uuid: d26598cf-2cdf-4219-80d0-94646dff160d
+  uuid: 69693208-38c1-4e15-8f93-36ac80d69840
   encryption: none
   network: tcp
   security: none
   headerType: none
-- name: 🇯🇵 JP-8 | Sub3
+- name: 🇺🇸 US-6 | Sub3
   type: vless
-  server: 14.137.238.160
+  server: 182.16.61.2
+  port: 45647
+  uuid: 69693208-38c1-4e15-8f93-36ac80d69840
+  encryption: none
+  network: tcp
+  security: none
+  headerType: none
+- name: 🇺🇸 US-7 | Sub3
+  type: vless
+  server: 180.178.60.251
   port: 10000
-  uuid: d26598cf-2cdf-4219-80d0-94646dff160d
+  uuid: 69693208-38c1-4e15-8f93-36ac80d69840
   encryption: none
   network: tcp
   security: none
   headerType: none
 - name: 🇯🇵 JP-10 | Sub3
   type: vless
-  server: 14.137.238.159
+  server: 14.137.238.16
   port: 10000
-  uuid: d26598cf-2cdf-4219-80d0-94646dff160d
-  encryption: none
-  network: tcp
-  security: none
-  headerType: none
-- name: 🇨🇳 CN-4 | Sub3
-  type: vless
-  server: 211.76.176.166
-  port: 10000
-  uuid: d26598cf-2cdf-4219-80d0-94646dff160d
+  uuid: 69693208-38c1-4e15-8f93-36ac80d69840
   encryption: none
   network: tcp
   security: none
@@ -10144,16 +10387,18 @@ proxies:
   headerType: none
 - name: 🇺🇸 US-8 | Sub3
   type: vless
-  server: 38.180.4.158
-  port: 2001
-  uuid: e5ce79f9-fdac-4e80-8286-a15b96fded72
+  server: cf.130209.xyz
+  port: 2053
+  uuid: 65c56e1f-5c41-40bc-b0b5-9346772476ca
   encryption: none
-  network: ws
-  sni: r8eerh.cainiaohub.xyz
-  ws-opts:
-    path: /81574b6b-c9d7-44a0-b83d-dad56e8cb529
-    headers:
-      Host: r8eerh.cainiaohub.xyz
+  network: httpupgrade
+  security: tls
+  sni: usa.u-s-a.ccwu.cc
+  servername: usa.u-s-a.ccwu.cc
+  skip-cert-verify: false
+  fp: edge
+  client-fingerprint: edge
+  tls: true
 - name: 🇭🇰 HK-1 | Filter
   type: ss
   server: hkp9.network-cdn-gw-yd.net
@@ -11112,6 +11357,30 @@ proxy-groups:
   - 🇲🇾 MY-10 | 9PB
   - 🇸🇬 SG-1 [ipv6] | Lifetime
   - 🇸🇬 SG-2 [ipv6] | Lifetime
+  - 🇩🇪 DE-1 | Lifetime
+  - 🇫🇷 FR-1 | Lifetime
+  - 🇳🇱 NL-1 | Lifetime
+  - 🇷🇴 RO-1 | Lifetime
+  - 🇷🇴 RO-2 | Lifetime
+  - 🇷🇴 RO-3 | Lifetime
+  - 🇷🇴 RO-4 | Lifetime
+  - 🇷🇴 RO-5 | Lifetime
+  - 🇷🇴 RO-6 | Lifetime
+  - 🇷🇴 RO-7 | Lifetime
+  - 🇷🇴 RO-8 | Lifetime
+  - 🇷🇴 RO-9 | Lifetime
+  - 🇷🇴 RO-10 | Lifetime
+  - 🇷🇴 RO-11 | Lifetime
+  - 🇷🇴 RO-12 | Lifetime
+  - 🇷🇴 RO-13 | Lifetime
+  - 🇷🇴 RO-14 | Lifetime
+  - 🇷🇴 RO-15 | Lifetime
+  - 🇺🇸 US-1 | Lifetime
+  - 🇺🇸 US-2 | Lifetime
+  - 🇯🇵 JP-1 | Lifetime
+  - 🇯🇵 JP-2 | Lifetime
+  - 🇹🇷 TR-1 | Lifetime
+  - 🇬🇧 GB-1 | Lifetime
   - 🇯🇵 JP-1 | Sub3
   - 🇭🇰 HK-1 | Sub3
   - 🇭🇰 HK-2 | Sub3
@@ -11144,12 +11413,10 @@ proxy-groups:
   - 🇨🇳 CN-2 | Sub3
   - 🇭🇰 HK-7 | Sub3
   - 🇭🇰 HK-8 | Sub3
-  - 🇭🇰 HK-10 | Sub3
-  - 🇭🇰 HK-11 | Sub3
   - 🇨🇳 CN-3 | Sub3
-  - 🇯🇵 JP-8 | Sub3
+  - 🇺🇸 US-6 | Sub3
+  - 🇺🇸 US-7 | Sub3
   - 🇯🇵 JP-10 | Sub3
-  - 🇨🇳 CN-4 | Sub3
   - 🇸🇬 SG-6 | Sub3
   - 🇩🇪 DE-2 | Sub3
   - 🇹🇷 TR-1 | Sub3
@@ -11770,6 +12037,30 @@ proxy-groups:
   proxies:
   - 🇸🇬 SG-1 [ipv6] | Lifetime
   - 🇸🇬 SG-2 [ipv6] | Lifetime
+  - 🇩🇪 DE-1 | Lifetime
+  - 🇫🇷 FR-1 | Lifetime
+  - 🇳🇱 NL-1 | Lifetime
+  - 🇷🇴 RO-1 | Lifetime
+  - 🇷🇴 RO-2 | Lifetime
+  - 🇷🇴 RO-3 | Lifetime
+  - 🇷🇴 RO-4 | Lifetime
+  - 🇷🇴 RO-5 | Lifetime
+  - 🇷🇴 RO-6 | Lifetime
+  - 🇷🇴 RO-7 | Lifetime
+  - 🇷🇴 RO-8 | Lifetime
+  - 🇷🇴 RO-9 | Lifetime
+  - 🇷🇴 RO-10 | Lifetime
+  - 🇷🇴 RO-11 | Lifetime
+  - 🇷🇴 RO-12 | Lifetime
+  - 🇷🇴 RO-13 | Lifetime
+  - 🇷🇴 RO-14 | Lifetime
+  - 🇷🇴 RO-15 | Lifetime
+  - 🇺🇸 US-1 | Lifetime
+  - 🇺🇸 US-2 | Lifetime
+  - 🇯🇵 JP-1 | Lifetime
+  - 🇯🇵 JP-2 | Lifetime
+  - 🇹🇷 TR-1 | Lifetime
+  - 🇬🇧 GB-1 | Lifetime
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -11808,12 +12099,10 @@ proxy-groups:
   - 🇨🇳 CN-2 | Sub3
   - 🇭🇰 HK-7 | Sub3
   - 🇭🇰 HK-8 | Sub3
-  - 🇭🇰 HK-10 | Sub3
-  - 🇭🇰 HK-11 | Sub3
   - 🇨🇳 CN-3 | Sub3
-  - 🇯🇵 JP-8 | Sub3
+  - 🇺🇸 US-6 | Sub3
+  - 🇺🇸 US-7 | Sub3
   - 🇯🇵 JP-10 | Sub3
-  - 🇨🇳 CN-4 | Sub3
   - 🇸🇬 SG-6 | Sub3
   - 🇩🇪 DE-2 | Sub3
   - 🇹🇷 TR-1 | Sub3
