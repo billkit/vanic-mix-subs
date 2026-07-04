@@ -1,7 +1,7 @@
 # 合并 Vanic24/VPN 订阅
 # 源: 8EB, 9PB, Lifetime, Sub3, Filter (MIX socks5 因 mihomo 不支持入站 socks5 已排除)
-# 生成时间: 2026-07-04 13:55:42 UTC
-# 节点: 662 (去重前 681)  策略组: 7
+# 生成时间: 2026-07-04 19:34:33 UTC
+# 节点: 667 (去重前 682)  策略组: 7
 port: 7890
 socks-port: 7891
 allow-lan: false
@@ -10400,49 +10400,145 @@ proxies:
   client-fingerprint: edge
   tls: true
 - name: 🇭🇰 HK-1 | Filter
+  type: anytls
+  server: 4562ef30-tegxs0-tr9h64-1f1f1.hk2.hyhuawei.com
+  port: 443
+  password: 61c4be90-6235-11ec-a8bf-f23c91cfbbc9
+  sni: 4562ef30-tegxs0-tr9h64-1f1f1.hk2.hyhuawei.com
+  servername: 4562ef30-tegxs0-tr9h64-1f1f1.hk2.hyhuawei.com
+  skip-cert-verify: true
+  udp: false
+  tfo: false
+- name: 🇦🇺 AU-1 | Filter
+  type: hysteria2
+  server: 103.106.231.238
+  port: 55000
+  password: 3213f4a7-4817-45b8-bfff-59e5836a78bc
+  sni: www.bing.com
+  servername: www.bing.com
+  skip-cert-verify: true
+  tfo: false
+  udp: true
+- name: 🇭🇰 HK-2 | Filter
+  type: hysteria2
+  server: 45.202.248.138
+  port: 55000
+  password: af223a34-e37f-41c8-8467-26474a3ac9d8
+  sni: www.bing.com
+  servername: www.bing.com
+  skip-cert-verify: true
+  tfo: false
+  udp: true
+- name: 🇺🇸 US-1 | Filter
+  type: hysteria2
+  server: oracle1.chenlan.top
+  port: 11573
+  password: Unb9YTYVSw
+  sni: oracle1.chenlan.top
+  servername: oracle1.chenlan.top
+  skip-cert-verify: true
+  tfo: false
+  udp: true
+- name: 🇰🇷 KR-1 | Filter
+  type: hysteria2
+  server: 140.245.74.46
+  port: 55020
+  password: d5m-5bGOsVbFgRlxsEyO3pCF
+  skip-cert-verify: true
+  tfo: false
+  udp: true
+- name: 🇫🇷 FR-1 | Filter
+  type: hysteria2
+  server: vpn-fr-001.fastervpn.world
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: vpn-fr-001.fastervpn.world
+  servername: vpn-fr-001.fastervpn.world
+  skip-cert-verify: true
+  tfo: false
+  udp: true
+- name: 🇭🇰 HK-3 | Filter
+  type: hysteria2
+  server: 202.146.222.29
+  port: 443
+  password: H7mP2xY9kJ4nQ8wR5tF6vB3z
+  sni: https://t.me/WangCai2🇨🇳
+  servername: https://t.me/WangCai2🇨🇳
+  skip-cert-verify: true
+  tfo: false
+  udp: true
+- name: 🇸🇬 SG-1 | Filter
+  type: hysteria2
+  server: 13.229.110.73
+  port: 443
+  password: qQe1z5kU8kN6SlKnDt9Ru3Qp
+  sni: vpn-sg-001.fastervpn.world
+  servername: vpn-sg-001.fastervpn.world
+  skip-cert-verify: true
+  tfo: false
+  udp: true
+- name: 🇺🇸 US-2 | Filter
   type: ss
-  server: hkp9.network-cdn-gw-yd.net
-  port: 48819
-  password: 8dc3803d-42e0-40d3-addc-c79632858029
+  server: us08.network-cdn-gw-yd.net
+  port: 43212
+  password: 1348a838-9105-4f3e-bd04-699a9be10480
   skip-cert-verify: true
   tfo: false
   udp: false
-- name: 🇬🇧 GB-1 | Filter
-  type: trojan
-  server: celestara.biz
-  port: 443
-  password: MiTiVPN
-  network: ws
-  sni: sw.App-Cloud.ir
-  servername: sw.App-Cloud.ir
+- name: 🇺🇸 US-3 | Filter
+  type: ss
+  server: us02.network-cdn-gw-yd.net
+  port: 44402
+  password: b3813e01-e131-4ed2-98fd-c3a805fc515f
   skip-cert-verify: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /MiTiVPN=Se
+  tfo: false
+  udp: false
+- name: 🇹🇼 TW-1 | Filter
+  type: ss
+  server: tw05.network-cdn-gw-yd.net
+  port: 46605
+  password: 1348a838-9105-4f3e-bd04-699a9be10480
+  skip-cert-verify: true
+  tfo: false
+  udp: false
+- name: 🇭🇰 HK-4 | Filter
+  type: ss
+  server: hk09.network-cdn-gw-yd.net
+  port: 47709
+  password: 1348a838-9105-4f3e-bd04-699a9be10480
+  skip-cert-verify: true
+  tfo: false
+  udp: false
+- name: 🇭🇰 HK-5 | Filter
+  type: ss
+  server: hk18.network-cdn-gw-yd.net
+  port: 47708
+  password: b3813e01-e131-4ed2-98fd-c3a805fc515f
+  skip-cert-verify: true
+  tfo: false
+  udp: false
+- name: 🇺🇸 US-4 | Filter
+  type: ss
+  server: us05.network-cdn-gw-yd.net
+  port: 44405
+  password: 1348a838-9105-4f3e-bd04-699a9be10480
+  skip-cert-verify: true
   tfo: false
   udp: false
 - name: 🇯🇵 JP-1 | Filter
-  type: trojan
-  server: 103.106.228.187
-  port: 54603
-  password: u2sVknrSIFjDojeqAUjgYkCnh9szHcMQ
-  sni: 103.106.228.187
-  servername: 103.106.228.187
+  type: ss
+  server: jp01.network-cdn-gw-yd.net
+  port: 48801
+  password: 1348a838-9105-4f3e-bd04-699a9be10480
   skip-cert-verify: true
   tfo: false
   udp: false
-- name: 🇺🇸 US-2 | Filter
-  type: trojan
-  server: assets.fiverr.com
-  port: 443
-  password: MiTiVPN
-  network: ws
-  sni: sw.App-Cloud.ir
-  servername: sw.App-Cloud.ir
+- name: 🇺🇸 US-5 | Filter
+  type: ss
+  server: us04.network-cdn-gw-yd.net
+  port: 44404
+  password: 1348a838-9105-4f3e-bd04-699a9be10480
   skip-cert-verify: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /MiTiVPN=Se
   tfo: false
   udp: false
 - name: 🇨🇭 CH-1 | Filter
@@ -10465,7 +10561,7 @@ proxies:
     short-id: d6d0
   tfo: false
   udp: false
-- name: 🇸🇬 SG-1 | Filter
+- name: 🇸🇬 SG-2 | Filter
   type: vless
   server: 172.66.40.229
   port: 2096
@@ -10491,7 +10587,7 @@ proxies:
   skip-cert-verify: true
   tfo: false
   udp: false
-- name: 🇰🇷 KR-1 | Filter
+- name: 🇰🇷 KR-2 | Filter
   type: vless
   server: 15.164.228.35
   port: 8686
@@ -10519,7 +10615,7 @@ proxies:
       Host: max-gb1.global.ssl.fastly.net
   tfo: false
   udp: false
-- name: 🇺🇸 US-4 | Filter
+- name: 🇺🇸 US-6 | Filter
   type: vless
   server: 185.170.154.202
   port: 443
@@ -10535,7 +10631,7 @@ proxies:
   flow: xtls-rprx-vision
   tfo: false
   udp: false
-- name: 🇬🇧 GB-2 | Filter
+- name: 🇬🇧 GB-1 | Filter
   type: vless
   server: 31.76.115.10
   port: 443
@@ -10579,198 +10675,82 @@ proxies:
   tls: true
   tfo: false
   udp: false
-- name: 🇳🇱 NL-2 | Filter
+- name: 🇺🇸 US-7 | Filter
   type: vless
-  server: 199.232.78.143
+  server: 8.133.176.42
   port: 443
-  uuid: af42f8db-09a9-4eb5-9047-e97b5a072627
+  uuid: 659a9075-d5ab-4fd2-bf34-b37043fae832
   network: ws
-  sni: global.fastly.com
-  servername: global.fastly.com
+  sni: nbhhh.mrcool.kdns.fr
+  servername: nbhhh.mrcool.kdns.fr
   skip-cert-verify: true
-  client-fingerprint: firefox
   ws-opts:
-    path: /?ed=2048
+    path: /proxyip=3cfb8e26.tp30304.ip.090227.xyz
     headers:
-      Host: npnl-2-one.global.ssl.fastly.net
+      Host: nbhhh.mrcool.kdns.fr
   tls: true
-  alpn:
-  - http/1.1
   tfo: false
   udp: false
-- name: 🇺🇸 US-5 | Filter
+- name: 🇺🇸 US-8 | Filter
   type: vless
-  server: lk-tra.riseads.in
-  port: 443
-  uuid: 10ea33f2-1a66-4dec-99f2-8068a6b56a45
-  sni: lk-tra.riseads.in
-  servername: lk-tra.riseads.in
+  server: 192.166.82.165
+  port: 80
+  uuid: ed6297aa-aa75-46b8-fea7-98074fd0a482
+  network: ws
   skip-cert-verify: true
-  client-fingerprint: chrome
+  ws-opts:
+    path: /assets/js/app-v2.8.4-5f9a2b3c.js
+    headers:
+      Host: skyroom.online
+  tfo: false
+  udp: false
+- name: 🇬🇧 GB-2 | Filter
+  type: vless
+  server: 217.179.220.164
+  port: 443
+  uuid: 3e0a91ec-05a3-461f-9367-14b289a5b54b
+  sni: uk.monkeyisland.xyz
+  servername: uk.monkeyisland.xyz
+  skip-cert-verify: true
+  client-fingerprint: firefox
   tls: true
   reality-opts:
-    public-key: Loc9rXCMgSkksa4TGr203UCppZh9epDs8tdTVCjiCRw
-    short-id: c39843c687af3383
+    public-key: 2AKBmK0PMf2zUMhRo1Ad-WNf_XoRk3AN-SGo6ZdhxA4
+    short-id: f66c289040d589ee
   flow: xtls-rprx-vision
   tfo: false
   udp: false
-- name: 🇩🇪 DE-2 | Filter
+- name: 🇱🇹 LT-1 | Filter
   type: vless
-  server: xn-ip.dbsll.ir
-  port: 2083
-  uuid: 199436d3-2fa2-4e34-a1de-844419de5a4f
-  network: ws
-  sni: xn-de.shakhle.ir.
-  servername: xn-de.shakhle.ir.
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: xn-de.shakhle.ir.
-  tls: true
-  alpn:
-  - http/1.1
-  tfo: false
-  udp: false
-- name: 🇳🇱 NL-3 | Filter
-  type: vless
-  server: 89.34.90.179
-  port: 443
-  uuid: b250af86-7f78-4e69-9e99-1f1ddfe27ea0
-  sni: max.ru
-  servername: max.ru
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: Cve6RU_xmFPAsLiW2eIucli0lwEZyf7XFj6_rR8LukI
-    short-id: 671047edbaa38eef
-  flow: xtls-rprx-vision
-  tfo: false
-  udp: false
-- name: 🇬🇧 GB-4 | Filter
-  type: vless
-  server: 199.232.78.120
-  port: 443
-  uuid: af42f8db-09a9-4eb5-9047-e97b5a072627
-  network: ws
-  sni: global.fastly.com
-  servername: global.fastly.com
-  skip-cert-verify: true
-  client-fingerprint: firefox
-  ws-opts:
-    path: /?ed=2048
-    headers:
-      Host: npnl-2-two.global.ssl.fastly.net
-  tls: true
-  alpn:
-  - http/1.1
-  tfo: false
-  udp: false
-- name: 🇭🇺 HU-1 | Filter
-  type: vless
-  server: 45.195.111.83
-  port: 443
-  uuid: f9ae5aed-9f23-4d9b-b4b2-e82a24c2d74a
+  server: 45.194.10.56
+  port: 8443
+  uuid: 3e7cede4-721a-4807-b0a2-5fe6586af907
   sni: storage.yandex.net
   servername: storage.yandex.net
   skip-cert-verify: true
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: 7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg
-    short-id: 2715592069f36fe7
-  flow: xtls-rprx-vision
-  tfo: false
-  udp: false
-- name: 🇩🇪 DE-3 | Filter
-  type: vless
-  server: bot.sobhanpor.ir
-  port: 443
-  uuid: c6021439-a298-42a2-8db5-9407f48c60b3
-  sni: bot.sobhanpor.ir
-  servername: bot.sobhanpor.ir
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  tls: true
-  tfo: false
-  udp: false
-- name: 🇦🇹 AT-1 | Filter
-  type: vless
-  server: 130.49.219.126
-  port: 8443
-  uuid: 2ee2b77f-e4cd-4e5d-af22-f9d919eeadd5
-  sni: at16.fastlanehosting.ru
-  servername: at16.fastlanehosting.ru
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  tls: true
-  alpn:
-  - h2
-  - http/1.1
-  tfo: false
-  udp: false
-- name: 🇳🇱 NL-4 | Filter
-  type: vless
-  server: 138.124.98.150
-  port: 443
-  uuid: 05b232dc-185b-48ed-8813-8c96d9d5d7f0
-  sni: ads.x5.ru
-  servername: ads.x5.ru
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: agZZLk3GNH8CME1dobmtO1UwIrXYL-WrEuLREy_EqnA
-    short-id: aefe467c7b22f190
-  tfo: false
-  udp: false
-- name: 🇵🇱 PL-1 | Filter
-  type: vless
-  server: 45.144.50.249
-  port: 443
-  uuid: a2415a12-3f92-4636-9823-9828d3ceb818
-  sni: www.intel.com
-  servername: www.intel.com
-  skip-cert-verify: true
-  client-fingerprint: chrome
-  tls: true
-  reality-opts:
-    public-key: hgQ3Wa09f9ectEos7QyC1LQ8bBq8lEAcAtGIDFTKin0
-    short-id: c0
-  tfo: false
-  udp: false
-- name: 🇺🇸 US-6 | Filter
-  type: vless
-  server: 2.26.8.55
-  port: 443
-  uuid: 10ea33f2-1a66-4dec-99f2-8068a6b56a45
-  sni: lk-tra.riseads.in
-  servername: lk-tra.riseads.in
-  skip-cert-verify: true
   client-fingerprint: firefox
   tls: true
   reality-opts:
-    public-key: Loc9rXCMgSkksa4TGr203UCppZh9epDs8tdTVCjiCRw
-    short-id: c39843c687af3383
+    public-key: L3X1eh1Jq_6PKJ6LlwjgiWq0XNaDOqCVKgIElJ5nkVA
+    short-id: 2cfb5a0ae8ab0cb0
   flow: xtls-rprx-vision
   tfo: false
   udp: false
-- name: 🇳🇱 NL-5 | Filter
+- name: 🇺🇸 US-9 | Filter
   type: vless
-  server: 144.31.190.191
+  server: 104.20.2.221
   port: 8443
-  uuid: 91d0fa43-e557-43e7-a731-f0c3d1fb306a
-  sni: ozon.ru
-  servername: ozon.ru
+  uuid: 6c7a6a6a-6a6a-4000-8000-000000000002
+  network: ws
+  sni: bycf.lzjnb.shop
+  servername: bycf.lzjnb.shop
   skip-cert-verify: true
   client-fingerprint: chrome
+  ws-opts:
+    path: /
+    headers:
+      Host: bycf.lzjnb.shop
   tls: true
-  reality-opts:
-    public-key: QHkXBS2ENHV0khgY9VBYi8_9bpfqnUYDcfQN4cW5Qg0
-    short-id: '4326'
-  flow: xtls-rprx-vision
   tfo: false
   udp: false
 proxy-groups:
@@ -11424,30 +11404,35 @@ proxy-groups:
   - 🇺🇦 UA-1 | Sub3
   - 🇺🇸 US-8 | Sub3
   - 🇭🇰 HK-1 | Filter
-  - 🇬🇧 GB-1 | Filter
-  - 🇯🇵 JP-1 | Filter
-  - 🇺🇸 US-2 | Filter
-  - 🇨🇭 CH-1 | Filter
-  - 🇸🇬 SG-1 | Filter
-  - 🇨🇭 CH-2 | Filter
+  - 🇦🇺 AU-1 | Filter
+  - 🇭🇰 HK-2 | Filter
+  - 🇺🇸 US-1 | Filter
   - 🇰🇷 KR-1 | Filter
-  - 🇩🇪 DE-1 | Filter
+  - 🇫🇷 FR-1 | Filter
+  - 🇭🇰 HK-3 | Filter
+  - 🇸🇬 SG-1 | Filter
+  - 🇺🇸 US-2 | Filter
+  - 🇺🇸 US-3 | Filter
+  - 🇹🇼 TW-1 | Filter
+  - 🇭🇰 HK-4 | Filter
+  - 🇭🇰 HK-5 | Filter
   - 🇺🇸 US-4 | Filter
-  - 🇬🇧 GB-2 | Filter
+  - 🇯🇵 JP-1 | Filter
+  - 🇺🇸 US-5 | Filter
+  - 🇨🇭 CH-1 | Filter
+  - 🇸🇬 SG-2 | Filter
+  - 🇨🇭 CH-2 | Filter
+  - 🇰🇷 KR-2 | Filter
+  - 🇩🇪 DE-1 | Filter
+  - 🇺🇸 US-6 | Filter
+  - 🇬🇧 GB-1 | Filter
   - 🇸🇪 SE-1 | Filter
   - 🇳🇱 NL-1 | Filter
-  - 🇳🇱 NL-2 | Filter
-  - 🇺🇸 US-5 | Filter
-  - 🇩🇪 DE-2 | Filter
-  - 🇳🇱 NL-3 | Filter
-  - 🇬🇧 GB-4 | Filter
-  - 🇭🇺 HU-1 | Filter
-  - 🇩🇪 DE-3 | Filter
-  - 🇦🇹 AT-1 | Filter
-  - 🇳🇱 NL-4 | Filter
-  - 🇵🇱 PL-1 | Filter
-  - 🇺🇸 US-6 | Filter
-  - 🇳🇱 NL-5 | Filter
+  - 🇺🇸 US-7 | Filter
+  - 🇺🇸 US-8 | Filter
+  - 🇬🇧 GB-2 | Filter
+  - 🇱🇹 LT-1 | Filter
+  - 🇺🇸 US-9 | Filter
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
@@ -12116,30 +12101,35 @@ proxy-groups:
   type: url-test
   proxies:
   - 🇭🇰 HK-1 | Filter
-  - 🇬🇧 GB-1 | Filter
-  - 🇯🇵 JP-1 | Filter
-  - 🇺🇸 US-2 | Filter
-  - 🇨🇭 CH-1 | Filter
-  - 🇸🇬 SG-1 | Filter
-  - 🇨🇭 CH-2 | Filter
+  - 🇦🇺 AU-1 | Filter
+  - 🇭🇰 HK-2 | Filter
+  - 🇺🇸 US-1 | Filter
   - 🇰🇷 KR-1 | Filter
-  - 🇩🇪 DE-1 | Filter
+  - 🇫🇷 FR-1 | Filter
+  - 🇭🇰 HK-3 | Filter
+  - 🇸🇬 SG-1 | Filter
+  - 🇺🇸 US-2 | Filter
+  - 🇺🇸 US-3 | Filter
+  - 🇹🇼 TW-1 | Filter
+  - 🇭🇰 HK-4 | Filter
+  - 🇭🇰 HK-5 | Filter
   - 🇺🇸 US-4 | Filter
-  - 🇬🇧 GB-2 | Filter
+  - 🇯🇵 JP-1 | Filter
+  - 🇺🇸 US-5 | Filter
+  - 🇨🇭 CH-1 | Filter
+  - 🇸🇬 SG-2 | Filter
+  - 🇨🇭 CH-2 | Filter
+  - 🇰🇷 KR-2 | Filter
+  - 🇩🇪 DE-1 | Filter
+  - 🇺🇸 US-6 | Filter
+  - 🇬🇧 GB-1 | Filter
   - 🇸🇪 SE-1 | Filter
   - 🇳🇱 NL-1 | Filter
-  - 🇳🇱 NL-2 | Filter
-  - 🇺🇸 US-5 | Filter
-  - 🇩🇪 DE-2 | Filter
-  - 🇳🇱 NL-3 | Filter
-  - 🇬🇧 GB-4 | Filter
-  - 🇭🇺 HU-1 | Filter
-  - 🇩🇪 DE-3 | Filter
-  - 🇦🇹 AT-1 | Filter
-  - 🇳🇱 NL-4 | Filter
-  - 🇵🇱 PL-1 | Filter
-  - 🇺🇸 US-6 | Filter
-  - 🇳🇱 NL-5 | Filter
+  - 🇺🇸 US-7 | Filter
+  - 🇺🇸 US-8 | Filter
+  - 🇬🇧 GB-2 | Filter
+  - 🇱🇹 LT-1 | Filter
+  - 🇺🇸 US-9 | Filter
   url: https://www.gstatic.com/generate_204
   interval: 300
   tolerance: 50
