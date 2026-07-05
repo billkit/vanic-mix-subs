@@ -1,41 +1,40 @@
-# vanic-mix-subs 📦
+# Vanic24/VPN → Dae/Daed 通用订阅
 
-每 6 小时自动拉取 [Vanic24/VPN](https://github.com/Vanic24/VPN) 仓库的 5 个 Clash 订阅文件，
-合并去重后输出一个 Daed / mihomo 通用订阅。
-
-> **跳过 MIX**：该文件全是 socks5 节点，mihomo 内核不支持 socks5 入站代理，无法使用。
+把 [Vanic24/VPN](https://github.com/Vanic24/VPN) 的 Clash 节点转换成 Dae/Daed 能直接识别的通用订阅格式。
 
 ## 产物
 
-- [`vanic_merged.yaml`](./vanic_merged.yaml) — Daed / Clash Verge / Stash / Clash Meta for Android 直接吃
+- `vanic_universal.txt` — 纯文本，每行一个节点 URI
+- `vanic_universal_base64.txt` — base64 编码，Dae/Shadowrocket/Loón 直接订阅
+- `vanic_universal.yaml` — 元数据（节点数、协议分布、更新时间）
 
-合并源（去重前 571，去重后 ~563）：
+## 支持的协议
 
-| 文件 | 节点 | 协议 |
-|---|---|---|
-| 8EB | 50 | trojan / vless |
-| 9PB | 420 | anytls / hysteria2 |
-| Lifetime | 12 | vless / trojan / ss / vmess |
-| Sub3 | 34 | vless |
-| Filter | 47 | hysteria2 / trojan / vless |
-
-策略组：
-- 🌍 全线路选择 (select，含所有 📦 子组入口)
-- ⚡️ 全自动测速 (url-test, 全部 563 节点)
-- 📦 8EB / 📦 9PB / 📦 Lifetime / 📦 Sub3 / 📦 Filter (各自的 url-test)
-
-## 怎么用
-**Daed / Clash Verge / Clash Meta 内核：**
 ```
-订阅 URL: https://raw.githubusercontent.com/billkit/vanic-mix-subs/main/vanic_merged.yaml
+vless / hysteria2 / anytls / trojan / ss / vmess
 ```
 
-## 本地运行
+## 本地使用
+
 ```bash
-python3 build_merged.py
+pip install pyyaml
+python3 build_universal_sub.py
 ```
 
-## 调度
-GitHub Actions 每 6 小时（cron `13 */6 * * *`）自动跑一次 + 手动触发。
+输出 3 个文件，用 `vanic_universal_base64.txt` 作为订阅链接。
 
-源码声明：源仓库仅用于个人研究/测试，不保证节点可用性。
+## Dae/Daed 配置
+
+```nginx
+subscription {
+    vanic: 'http://你的服务器:8888/vanic_universal_base64.txt'
+}
+```
+
+或直接在客户端导入 base64 链接。
+
+## 节点说明
+
+- 来源：8EB / 9PB / Lifetime / Sub3 / Filter（跳过 MIX）
+- 去重：按 (server, port, type) 去重
+- 过滤：自动跳过无效节点（空密码、缺失认证等）
