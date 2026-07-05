@@ -1,6 +1,6 @@
 # 合并 Vanic24/VPN 订阅
 # 源: 8EB, 9PB, Lifetime, Sub3, Filter (MIX socks5 因 mihomo 不支持入站 socks5 已排除)
-# 生成时间: 2026-07-05 04:17:37 UTC
+# 生成时间: 2026-07-05 09:21:08 UTC
 # 节点: 667 (去重前 682)  策略组: 7
 port: 7890
 socks-port: 7891
