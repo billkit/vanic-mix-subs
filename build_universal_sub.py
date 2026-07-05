@@ -264,16 +264,37 @@ def main():
     uris = []
     skipped = []
     for p in deduped:
+        # 跳过明显无效节点
+        t = p.get("type", "")
+        password = p.get("password", "")
+        
+        # hysteria2: 密码必须是真实值（排除占位符/URL）
+        if t == "hysteria2" and (not password or "/" in password or password.startswith("http")):
+            skipped.append((t, p["name"], f"invalid password: {password[:50]}"))
+            continue
+        
+        # socks5/http: 必须有真实认证信息
+        if t in ("socks", "http"):
+            has_auth = bool(p.get("username")) and bool(p.get("password"))
+            if not has_auth:
+                skipped.append((t, p["name"], "missing auth"))
+                continue
+        
         uri = node_to_uri(p)
         if uri:
             uris.append(uri)
         else:
-            skipped.append((p.get("type"), p["name"]))
+            skipped.append((t, p["name"], "unsupported"))
 
     if skipped:
-        print(f"[skip] {len(skipped)} unsupported:")
-        for t, n in skipped[:10]:
-            print(f"  {t}: {n}")
+        print(f"[skip] {len(skipped)} invalid/unsupported:")
+        for item in skipped[:10]:
+            if len(item) == 3:
+                t, n, reason = item
+                print(f"  {t}: {n} ({reason})")
+            else:
+                t, n = item
+                print(f"  {t}: {n}")
 
     # 输出 txt
     txt_content = "\n".join(uris) + "\n"
