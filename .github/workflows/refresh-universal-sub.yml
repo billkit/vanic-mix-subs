@@ -1,0 +1,69 @@
+name: refresh-universal-sub
+
+on:
+  schedule:
+    - cron: "13 */6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "build_universal_sub.py"
+      - ".github/workflows/refresh-universal-sub.yml"
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    timeout-minutes: 5
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install PyYAML
+        run: pip install pyyaml
+
+      - name: Build universal subscription
+        run: python3 build_universal_sub.py
+
+      - name: Validate subscription
+        run: |
+          python3 - <<'PY'
+          import yaml, base64
+
+          # 验证 base64 订阅
+          with open("vanic_universal_base64.txt", encoding="utf-8") as f:
+              b64 = f.read().strip()
+          decoded = base64.b64decode(b64).decode()
+          uris = [l for l in decoded.splitlines() if l.strip()]
+          assert len(uris) >= 400, f"节点过少: {len(uris)}"
+
+          # 验证元数据
+          meta = yaml.safe_load(open("vanic_universal.yaml", encoding="utf-8"))
+          assert meta["subscription"]["node_count"] == len(uris), "节点数不一致"
+
+          # 协议分布
+          types = {}
+          for u in uris:
+              t = u.split("://", 1)[0]
+              types[t] = types.get(t, 0) + 1
+          print(f"OK nodes={len(uris)} types={types}")
+          PY
+
+      - name: Commit if changed
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          if git status --porcelain | grep -q -E "vanic_universal\.(txt|yaml)"; then
+            git add vanic_universal.txt vanic_universal_base64.txt vanic_universal.yaml
+            git commit -m "chore: refresh universal subscription" || true
+            git push
+            echo "Pushed update"
+          else
+            echo "No content change"
+          fi
