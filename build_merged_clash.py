@@ -18,6 +18,9 @@ def fetch(name):
 
 def normalize(p):
     out = dict(p)
+    # Clash Meta 用 socks5 而不是 socks
+    if out.get("type") == "socks":
+        out["type"] = "socks5"
     for old, new in RENAME.items():
         if old in out:
             out[new] = out.pop(old)
