@@ -1,6 +1,6 @@
 subscription:
   name: Vanic24/VPN 通用订阅
-  updated: '2026-07-05 19:40:57'
+  updated: '2026-07-06 04:37:25'
   node_count: 581
   skipped: 30
 nodes_txt: 'vless://360c46b7-afe1-4e86-bfe1-ba09b5fcd8a6@45.198.87.49:8443?encryption=none&type=tcp&security=reality&sni=storage.yandex.net&fp=firefox&flow=xtls-rprx-vision&pbk=7zd9mJilgjOrg_ohtw23Vmio-pdnYqeP_r-kiWt87Cg&sid=2715592069f36fe7#%F0%9F%87%AD%F0%9F%87%BA%20HU-1%20%7C%208EB
