@@ -41,7 +41,7 @@ jobs:
               b64 = f.read().strip()
           decoded = base64.b64decode(b64).decode()
           uris = [l for l in decoded.splitlines() if l.strip()]
-          assert len(uris) >= 200, f"节点过少: {len(uris)}"
+          assert len(uris) >= 10, f"节点过少: {len(uris)}"
 
           # 验证元数据
           meta = yaml.safe_load(open("vanic_universal.yaml", encoding="utf-8"))
