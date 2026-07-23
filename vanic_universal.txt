@@ -78,7 +78,7 @@ vless://29ca503d-e6b8-4509-b666-48133f450857@185.239.69.147:8443?encryption=none
 vless://29ca503d-e6b8-4509-b666-48133f450857@104.18.40.56:443?encryption=none&type=ws&security=tls&sni=learn00.evany.de5.net&fp=random&path=%2Ffdip%3Dtw.william.us.ci%21txt&host=learn00.evany.de5.net&allowInsecure=0#%F0%9F%87%A8%F0%9F%87%A6%20CA-37%20%7C%208EB
 trojan://HW85960347@in-colt.rooster465.autos:443?sni=in-colt.rooster465.autos&allowInsecure=0#%F0%9F%87%A6%F0%9F%87%BA%20AU-2%20%7C%208EB
 vless://29ca503d-e6b8-4509-b666-48133f450857@162.159.45.24:8443?encryption=none&type=ws&security=tls&sni=learn00.evany.de5.net&fp=random&path=%2Ffdip%3Dtw.william.us.ci%21txt%3Fed%3D2560&host=learn00.evany.de5.net&allowInsecure=0#%F0%9F%87%BA%F0%9F%87%B8%20US-16%20%7C%208EB
-anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zz.9966690.xyz:10001/?insecure=1&fp=chrome#%F0%9F%87%AE%F0%9F%87%B9%20IT-1%20%7C%209PB
+anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zz.9966690.xyz:10001/?insecure=1&fp=chrome#%F0%9F%87%B9%F0%9F%87%BC%20TW-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zz.9966690.xyz:10002/?insecure=1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zz.9966690.xyz:10003/?insecure=1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US-2%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zz.9966690.xyz:10004/?insecure=1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US-3%20%7C%209PB
