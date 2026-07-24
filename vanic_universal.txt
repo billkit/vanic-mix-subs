@@ -99,7 +99,7 @@ trojan://FC60532879@tolerant-rattler.rooster465.autos:443?allowInsecure=0#%F0%9F
 trojan://FC60532879@united-bedbug.rooster465.autos:443?allowInsecure=0#%F0%9F%87%AB%F0%9F%87%B7%20FR-6%20%7C%208EB
 trojan://FC60532879@immune-earwig.rooster465.autos:443?allowInsecure=0#%F0%9F%87%AB%F0%9F%87%B7%20FR-7%20%7C%208EB
 trojan://FC60532879@great-krill.rooster465.autos:443?allowInsecure=0#%F0%9F%87%AB%F0%9F%87%B7%20FR-8%20%7C%208EB
-anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zz.9966690.xyz:10001/?insecure=1&fp=chrome#%F0%9F%87%AA%F0%9F%87%B8%20ES-1%20%7C%209PB
+anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zz.9966690.xyz:10001/?insecure=1&fp=chrome#%F0%9F%87%B9%F0%9F%87%BC%20TW-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zz.9966690.xyz:10002/?insecure=1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zz.9966690.xyz:10003/?insecure=1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US-2%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zz.9966690.xyz:10004/?insecure=1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US-3%20%7C%209PB
@@ -120,7 +120,7 @@ anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@id.9966690.xyz:5001/?insecure=1&fp
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@sg.9966690.xyz:5001/?insecure=1&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20SG-2%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@in.9966690.xyz:5001/?insecure=1&fp=chrome#%F0%9F%87%AE%F0%9F%87%B3%20IN-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@it.9966690.xyz:5001/?insecure=1&fp=chrome#%F0%9F%87%AE%F0%9F%87%B9%20IT-1%20%7C%209PB
-anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@es.9966690.xyz:5001/?insecure=1&fp=chrome#%F0%9F%87%AA%F0%9F%87%B8%20ES-2%20%7C%209PB
+anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@es.9966690.xyz:5001/?insecure=1&fp=chrome#%F0%9F%87%AA%F0%9F%87%B8%20ES-1%20%7C%209PB
 ss://YWVzLTI1Ni1nY206N2UxZGQ0YzU1YmY4NWRhNQ==@212.192.15.52:20166?udp=true#%F0%9F%87%AD%F0%9F%87%B0%20HK-1%20%7C%209PB
 trojan://FC60532879@open-octopus.rooster465.autos:443?sni=open-octopus.rooster465.autos&allowInsecure=0#%F0%9F%87%AF%F0%9F%87%B5%20JP-2%20%7C%209PB
 trojan://FC60532879@wise-longhorn.rooster465.autos:443?sni=wise-longhorn.rooster465.autos&allowInsecure=0#%F0%9F%87%AF%F0%9F%87%B5%20JP-3%20%7C%209PB
@@ -224,8 +224,6 @@ vless://7b81d175-d180-4ec8-bbc5-dfe80e8d3b68@2.27.26.51:443?encryption=none&type
 ss://YWVzLTI1Ni1nY206ZmJhZjMzYmNmZmU1M2NmOQ==@195.58.48.19:30112?udp=true#%F0%9F%87%B7%F0%9F%87%BA%20RU-3%20%7C%209PB
 vless://c1d62d53-2fcd-4951-ab96-c81486f59775@se-vlss.w-mebel.pro:443?encryption=none&type=tcp&security=reality&sni=w-mebel.pro&fp=firefox&flow=xtls-rprx-vision&pbk=v-gQ6kkigIWhdwsNYayXf2AVL0TvuqA48u7IKSQcTno&sid=98a6a8db21c24dbe#%F0%9F%87%B7%F0%9F%87%BA%20RU-4%20%7C%209PB
 vless://d2aeb078-90db-4f90-b334-623bcbea8d31@vs-lv1.vibesignal.space:443?encryption=none&type=tcp&security=reality&sni=ajax.googleapis.com&fp=edge&flow=xtls-rprx-vision&pbk=ACeYESUJvHiKiAGjO3JqBFne0LF5jYwqo4M8Gng9MlU&sid=8fe2cfd693d773fb#%F0%9F%87%B3%F0%9F%87%AB%20NF-2%20%7C%209PB
-vless://9c79aceb-4649-44ea-9698-b5e9ecf6d6da@2a0e:97c0:7d4:39e9:b9c1:4089:a425:d470:10001?encryption=none&type=tcp&security=reality&sni=www.icloud.com&fp=chrome&flow=xtls-rprx-vision&pbk=7qP6YKWx5CJXia1qjQoIcD7FRjUBbioaioioI729D34&sid=2afe4310#%F0%9F%87%B8%F0%9F%87%AC%20SG-1%20%5Bipv6%5D%20%7C%20Lifetime
-vless://9c79aceb-4649-44ea-9698-b5e9ecf6d6da@2a0e:97c0:7d4:a398:e199:2e3c:4dc0:7abd:10001?encryption=none&type=tcp&security=reality&sni=www.icloud.com&fp=chrome&flow=xtls-rprx-vision&pbk=7qP6YKWx5CJXia1qjQoIcD7FRjUBbioaioioI729D34&sid=2afe4310#%F0%9F%87%B8%F0%9F%87%AC%20SG-2%20%5Bipv6%5D%20%7C%20Lifetime
 ss://YWVzLTI1Ni1nY206b1pJb0E2OVE4eWhjUVY4a2EzUGEzQQ==@82.38.31.35:443?udp=true#%F0%9F%87%B3%F0%9F%87%B1%20NL-1%20%7C%20Lifetime
 trojan://XG59623478@possible-pup.rooster465.autos:443?sni=possible-pup.rooster465.autos&allowInsecure=1&udp=true#%F0%9F%87%BA%F0%9F%87%B8%20US-1%20%7C%20Lifetime
 ss://YWVzLTI1Ni1nY206YXNkMTIzNDU2@103.149.182.79:8388#%F0%9F%87%A8%F0%9F%87%B3%20CN-1%20%7C%20Lifetime
