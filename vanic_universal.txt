@@ -99,11 +99,11 @@ trojan://FC60532879@tolerant-rattler.rooster465.autos:443?allowInsecure=0#%F0%9F
 trojan://FC60532879@united-bedbug.rooster465.autos:443?allowInsecure=0#%F0%9F%87%AB%F0%9F%87%B7%20FR-6%20%7C%208EB
 trojan://FC60532879@immune-earwig.rooster465.autos:443?allowInsecure=0#%F0%9F%87%AB%F0%9F%87%B7%20FR-7%20%7C%208EB
 trojan://FC60532879@great-krill.rooster465.autos:443?allowInsecure=0#%F0%9F%87%AB%F0%9F%87%B7%20FR-8%20%7C%208EB
-anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zz.9966690.xyz:10001/?insecure=1&fp=chrome#%F0%9F%87%B9%F0%9F%87%BC%20TW-1%20%7C%209PB
-anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zz.9966690.xyz:10002/?insecure=1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US-1%20%7C%209PB
-anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zz.9966690.xyz:10003/?insecure=1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US-2%20%7C%209PB
-anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zz.9966690.xyz:10004/?insecure=1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US-3%20%7C%209PB
-anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zz.9966690.xyz:10005/?insecure=1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US-4%20%7C%209PB
+anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf.9966690.xyz:10001/?insecure=1&fp=chrome#%F0%9F%87%AE%F0%9F%87%B9%20IT-1%20%7C%209PB
+anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf.9966690.xyz:10002/?insecure=1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US-1%20%7C%209PB
+anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf.9966690.xyz:10003/?insecure=1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US-2%20%7C%209PB
+anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf.9966690.xyz:10004/?insecure=1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US-3%20%7C%209PB
+anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf.9966690.xyz:10005/?insecure=1&fp=chrome#%F0%9F%87%BA%F0%9F%87%B8%20US-4%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@tw1.9966690.xyz:5001/?insecure=1&fp=chrome#%F0%9F%87%A8%F0%9F%87%B3%20CN-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@tw1.9966690.xyz:5002/?insecure=1&fp=chrome#%F0%9F%87%AF%F0%9F%87%B5%20JP-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@tw1.9966690.xyz:5003/?insecure=1&fp=chrome#%F0%9F%87%B0%F0%9F%87%B7%20KR-1%20%7C%209PB
@@ -119,7 +119,7 @@ anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@au.9966690.xyz:5001/?insecure=1&fp
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@id.9966690.xyz:5001/?insecure=1&fp=chrome#%F0%9F%87%AE%F0%9F%87%A9%20ID-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@sg.9966690.xyz:5001/?insecure=1&fp=chrome#%F0%9F%87%B8%F0%9F%87%AC%20SG-2%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@in.9966690.xyz:5001/?insecure=1&fp=chrome#%F0%9F%87%AE%F0%9F%87%B3%20IN-1%20%7C%209PB
-anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@it.9966690.xyz:5001/?insecure=1&fp=chrome#%F0%9F%87%AE%F0%9F%87%B9%20IT-1%20%7C%209PB
+anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@it.9966690.xyz:5001/?insecure=1&fp=chrome#%F0%9F%87%AE%F0%9F%87%B9%20IT-2%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@es.9966690.xyz:5001/?insecure=1&fp=chrome#%F0%9F%87%AA%F0%9F%87%B8%20ES-1%20%7C%209PB
 ss://YWVzLTI1Ni1nY206N2UxZGQ0YzU1YmY4NWRhNQ==@212.192.15.52:20166?udp=true#%F0%9F%87%AD%F0%9F%87%B0%20HK-1%20%7C%209PB
 trojan://FC60532879@open-octopus.rooster465.autos:443?sni=open-octopus.rooster465.autos&allowInsecure=0#%F0%9F%87%AF%F0%9F%87%B5%20JP-2%20%7C%209PB
