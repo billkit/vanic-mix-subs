@@ -185,7 +185,8 @@ anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf.9966690.xyz:10051/?insecure=1&s
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@suomali.9966690.xyz:5002/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%B8%F0%9F%87%B4%20SO-2%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf.9966690.xyz:10052/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%B9%F0%9F%87%B3%20TN-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@tunisi.9966690.xyz:5002/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%B9%F0%9F%87%B3%20TN-2%20%7C%209PB
-anytls://7a72c2c8-5b7b-4492-8c70-d20a88b0bf8f@kr2.catzl.top:40042/?sni=kr2.catzl.top&udp=true#%F0%9F%87%B0%F0%9F%87%B7%20KR-2%20%7C%209PB
+ss://YWVzLTI1Ni1nY206YXNkMTIzNDU2@103.149.183.80:8388?udp=true#%F0%9F%87%AD%F0%9F%87%B0%20HK-3%20%7C%209PB
+trojan://4c93f53c90441cd1c8ee51d1a94fcc8a@45.89.235.159:443?sni=vpshosting.pitopone.com&allowInsecure=1#%F0%9F%87%AF%F0%9F%87%B5%20JP-3%20%7C%209PB
 ss://YWVzLTI1Ni1nY206T1dWaFlXTTRPVEZsTkdGaE5URmlOalk1TkRObE9ESTNaREU1TmpjMFptRT0=@130.61.86.101:59924?udp=true#%F0%9F%87%A9%F0%9F%87%AA%20DE-1%20%7C%20Lifetime
 trojan://MITIVPN@104.21.5.155:443?sni=de1-MiTiVPN--MiTiVPN--MiTiVPN---MiTiVPN--MiTiVPN--MiTiVPN.mitiVpN.lIfeStyLe&allowInsecure=1&udp=true#%F0%9F%87%B3%F0%9F%87%B1%20NL-4%20%7C%20Lifetime
 vless://e5ce79f9-fdac-4e80-8286-a15b96fded72@60.248.219.52:443?encryption=none&type=ws&security=tls&path=%2F81574b6b-c9d7-44a0-b83d-dad56e8cb530&host=ty986gfazs.cainiaohub.xyz&allowInsecure=0#%F0%9F%87%A8%F0%9F%87%B3%20CN-1%20%7C%20Sub3
