@@ -101,13 +101,13 @@ ss://YWVzLTI1Ni1nY206ZDk5YzQyMjE5OWU2MmI2Yg==@195.133.23.5:30331?udp=true#%F0%9F
 ss://YWVzLTI1Ni1nY206VElBOGtPckhLRnBjRWFta0xDcktKakpYaFV1am1wVzdONnZwNXJ0V2gyST0=@129.151.94.56:61312?udp=true#%F0%9F%87%A7%F0%9F%87%B7%20BR-8%20%7C%208EB
 ss://YWVzLTI1Ni1nY206TUdVNFpqVmtNR05oWTJZM1l6TTBObUl4TURneU5EUTVPR1ZqWmpZMlkyWT0=@129.151.86.99:61312?udp=true#%F0%9F%87%A7%F0%9F%87%B7%20BR-9%20%7C%208EB
 ss://YWVzLTI1Ni1nY206V0M3WTUzcTI1SW1PSm1SL0tPd3pjMUVjNzdrWHRMNU94bTdSUjlNZVJYbz0=@163.176.167.126:59319?udp=true#%F0%9F%87%A7%F0%9F%87%B7%20BR-10%20%7C%208EB
-anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf.9966690.xyz:10001/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%AF%F0%9F%87%B5%20JP-1%20%7C%209PB
+anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf.9966690.xyz:10001/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%B9%F0%9F%87%BC%20TW-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf.9966690.xyz:10002/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%BA%F0%9F%87%B8%20US-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf.9966690.xyz:10003/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%BA%F0%9F%87%B8%20US-2%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf.9966690.xyz:10004/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%BA%F0%9F%87%B8%20US-3%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf.9966690.xyz:10005/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%BA%F0%9F%87%B8%20US-4%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@tw1.9966690.xyz:5001/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%A8%F0%9F%87%B3%20CN-1%20%7C%209PB
-anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@tw1.9966690.xyz:5002/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%AF%F0%9F%87%B5%20JP-2%20%7C%209PB
+anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@tw1.9966690.xyz:5002/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%AF%F0%9F%87%B5%20JP-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@tw1.9966690.xyz:5003/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%B0%F0%9F%87%B7%20KR-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@tw1.9966690.xyz:5004/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%B8%F0%9F%87%AC%20SG-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@tw1.9966690.xyz:5005/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%A6%F0%9F%87%BA%20AU-1%20%7C%209PB
@@ -121,7 +121,7 @@ anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@au.9966690.xyz:5001/?insecure=1&sn
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@id.9966690.xyz:5001/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%AE%F0%9F%87%A9%20ID-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf.9966690.xyz:10007/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%AD%F0%9F%87%B0%20HK-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@kytddog-sg1.2666777.xyz:5001/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%AD%F0%9F%87%B0%20HK-2%20%7C%209PB
-anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@kytddog-jp1.2666777.xyz:5001/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%AF%F0%9F%87%B5%20JP-3%20%7C%209PB
+anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@kytddog-jp1.2666777.xyz:5001/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%AF%F0%9F%87%B5%20JP-2%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf.9966690.xyz:10008/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%B2%F0%9F%87%B4%20MO-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@aomen.9966690.xyz:5002/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%B2%F0%9F%87%B4%20MO-2%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf.9966690.xyz:10009/?insecure=1&sni=iosapps.itunes.apple.com&udp=true#%F0%9F%87%B9%F0%9F%87%B1%20TL-1%20%7C%209PB
@@ -217,9 +217,9 @@ vless://98525CD3-88F8-45AE-851A-B64327E39D2A@hk3-r.link-t7.com:10128?encryption=
 vless://a484645e-59df-4980-b649-92b71250ec60@104.171.137.148:2200?encryption=none&type=ws&path=%2Fv1#%F0%9F%87%AD%F0%9F%87%B0%20HK-5%20%7C%209PB
 vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZGVkXHVkODNjXHVkZGYwIEhLLTYgfCA5UEIiLCAiYWRkIjogIjM2Ni0xMDk1LnJhYmJpdHByby1pbi0zLmNvbSIsICJwb3J0IjogIjI3MTA3IiwgImlkIjogImUzNTFkNmQ4LWMxNjctM2UwNy04ZmRhLTNmMmY0ZWMwNzYwYiIsICJhaWQiOiAiMCIsICJuZXQiOiAidGNwIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogIiIsICJwYXRoIjogIiIsICJ0bHMiOiAiIn0=
 vmess://eyJ2IjogIjIiLCAicHMiOiAiXHVkODNjXHVkZGVkXHVkODNjXHVkZGYwIEhLLTcgfCA5UEIiLCAiYWRkIjogIjM2Ni0xMDk1LnJhYmJpdHByby1pbi0zLmNvbSIsICJwb3J0IjogIjI5MDE0IiwgImlkIjogImUzNTFkNmQ4LWMxNjctM2UwNy04ZmRhLTNmMmY0ZWMwNzYwYiIsICJhaWQiOiAiMCIsICJuZXQiOiAidGNwIiwgInR5cGUiOiAibm9uZSIsICJob3N0IjogIiIsICJwYXRoIjogIiIsICJ0bHMiOiAiIn0=
-vless://548df4ba-0b7f-4850-ac84-716bbb68a4ba@161.33.181.105:443?encryption=none&type=ws&security=tls&path=%2F%2F%3Fed%3D2560&host=fm3.pages.dev&allowInsecure=0#%F0%9F%87%AF%F0%9F%87%B5%20JP-5%20%7C%209PB
-ss://YWVzLTI1Ni1nY206bGpxZGFsdTEzLi4=@35.77.188.151:8319?udp=true#%F0%9F%87%AF%F0%9F%87%B5%20JP-6%20%7C%209PB
-vless://81c8de18-5513-4a28-ad0f-3c7ab5695361@jp01.333210.best:40000?encryption=none&type=tcp&security=tls&flow=xtls-rprx-vision&allowInsecure=0#%F0%9F%87%AF%F0%9F%87%B5%20JP-7%20%7C%209PB
+vless://548df4ba-0b7f-4850-ac84-716bbb68a4ba@161.33.181.105:443?encryption=none&type=ws&security=tls&path=%2F%2F%3Fed%3D2560&host=fm3.pages.dev&allowInsecure=0#%F0%9F%87%AF%F0%9F%87%B5%20JP-4%20%7C%209PB
+ss://YWVzLTI1Ni1nY206bGpxZGFsdTEzLi4=@35.77.188.151:8319?udp=true#%F0%9F%87%AF%F0%9F%87%B5%20JP-5%20%7C%209PB
+vless://81c8de18-5513-4a28-ad0f-3c7ab5695361@jp01.333210.best:40000?encryption=none&type=tcp&security=tls&flow=xtls-rprx-vision&allowInsecure=0#%F0%9F%87%AF%F0%9F%87%B5%20JP-6%20%7C%209PB
 vless://b04a7ec4-c501-4d9b-b0ba-73354e4fc972@speed.dulacloud.store:443?encryption=none&type=ws&security=tls&path=%2Fdula&host=speed.dulacloud.store&allowInsecure=1#%F0%9F%87%B8%F0%9F%87%AC%20SG-2%20%7C%209PB
 anytls://13f0acfa-38c1-4e82-a758-583aa31740df@us62.jdoanst2026.com:443/?sni=us62.jdoanst2026.com&udp=true#%F0%9F%87%B8%F0%9F%87%AC%20SG-3%20%7C%209PB
 trojan://MiTiVPN@199.232.78.150:443?sni=ssl.fastly.com&allowInsecure=0#%F0%9F%87%B8%F0%9F%87%AC%20SG-4%20%7C%209PB
