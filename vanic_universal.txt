@@ -89,9 +89,9 @@ ss://YWVzLTI1Ni1nY206OTMyNWEzNDUtYzcyZi00NjM3LWE4ZjQtMzRmOWVmZmI3YmE2@211.91.158
 ss://YWVzLTI1Ni1nY206OTMyNWEzNDUtYzcyZi00NjM3LWE4ZjQtMzRmOWVmZmI3YmE2@211.91.158.26:21113?udp=true#%F0%9F%87%A8%F0%9F%87%B3%20CN-23%20%7C%208EB
 ss://YWVzLTI1Ni1nY206OTMyNWEzNDUtYzcyZi00NjM3LWE4ZjQtMzRmOWVmZmI3YmE2@211.91.158.26:21119?udp=true#%F0%9F%87%A8%F0%9F%87%B3%20CN-24%20%7C%208EB
 ss://YWVzLTI1Ni1nY206OTMyNWEzNDUtYzcyZi00NjM3LWE4ZjQtMzRmOWVmZmI3YmE2@211.91.158.44:21104?udp=true#%F0%9F%87%A8%F0%9F%87%B3%20CN-25%20%7C%208EB
-anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf-tw1.9999231.xyz:500/?insecure=0&sni=tw01.9999231.xyz&udp=true#%F0%9F%87%B9%F0%9F%87%BC%20TW-1%20%7C%209PB
-anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf-tw2.9999231.xyz:500/?insecure=0&sni=tw01.9999231.xyz&udp=true#%F0%9F%87%A8%F0%9F%87%B3%20CN-1%20%7C%209PB
-anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf-tw3.9999231.xyz:500/?insecure=0&sni=tw01.9999231.xyz&udp=true#%F0%9F%87%A8%F0%9F%87%B3%20CN-2%20%7C%209PB
+anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@twzz1.9999231.xyz:500/?insecure=0&sni=tw01.9999231.xyz&udp=true#%F0%9F%87%B9%F0%9F%87%BC%20TW-1%20%7C%209PB
+anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@twzz2.9999231.xyz:500/?insecure=0&sni=tw01.9999231.xyz&udp=true#%F0%9F%87%A8%F0%9F%87%B3%20CN-1%20%7C%209PB
+anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@tw1.9999231.xyz:500/?insecure=0&sni=tw01.9999231.xyz&udp=true#%F0%9F%87%A8%F0%9F%87%B3%20CN-2%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf-hk.9999231.xyz:1001/?insecure=0&sni=tw01.9999231.xyz&udp=true#%F0%9F%87%A8%F0%9F%87%B3%20CN-3%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf-jp.9999231.xyz:1001/?insecure=0&sni=tw01.9999231.xyz&udp=true#%F0%9F%87%A8%F0%9F%87%B3%20CN-4%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@zf-tw1.9999231.xyz:1002/?insecure=0&sni=us.9999231.xyz&udp=true#%F0%9F%87%BA%F0%9F%87%B8%20US-1%20%7C%209PB
