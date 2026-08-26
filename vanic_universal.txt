@@ -97,12 +97,8 @@ vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@103.224.84.70:443?encryption=none&t
 vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@199.189.253.250:443?encryption=none&type=ws&security=tls&path=%2Fsg-melbi%2F&host=josni.hoyes.cloudns.ch&allowInsecure=0#%F0%9F%87%B0%F0%9F%87%BF%20KZ-1%20%7C%208EB
 vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@103.70.115.106:8443?encryption=none&type=ws&security=tls&path=%2Fsg-melbi%2F&host=josni.hoyes.cloudns.ch&allowInsecure=0#%F0%9F%87%BB%F0%9F%87%B3%20VN-1%20%7C%208EB
 vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@188.240.213.98:8443?encryption=none&type=ws&security=tls&path=%2Fsg-melbi%2F&host=josni.hoyes.cloudns.ch&allowInsecure=0#%F0%9F%87%B0%F0%9F%87%AC%20KG-1%20%7C%208EB
-vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@162.159.198.1:443?encryption=none&type=ws&security=tls&path=%2Fsg-melbi%2F&host=josni.hoyes.cloudns.ch&allowInsecure=0#%F0%9F%87%BA%F0%9F%87%B8%20US-4%20%7C%208EB
-vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@ct.877774.xyz:443?encryption=none&type=ws&security=tls&path=%2Fsg-melbi%2F&host=josni.hoyes.cloudns.ch&allowInsecure=0#%F0%9F%87%BA%F0%9F%87%B8%20US-5%20%7C%208EB
-vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@na.877774.xyz:443?encryption=none&type=ws&security=tls&path=%2Fsg-melbi%2F&host=josni.hoyes.cloudns.ch&allowInsecure=0#%F0%9F%87%BA%F0%9F%87%B8%20US-6%20%7C%208EB
 vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@www.nestle.com.cn:443?encryption=none&type=ws&security=tls&path=%2Fsg-melbi%2F&host=josni.hoyes.cloudns.ch&allowInsecure=0#%F0%9F%87%A8%F0%9F%87%B3%20CN-1%20%7C%208EB
 vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@70mai.store:443?encryption=none&type=ws&security=tls&path=%2Fsg-melbi%2F&host=josni.hoyes.cloudns.ch&allowInsecure=0#%F0%9F%87%A8%F0%9F%87%B3%20CN-2%20%7C%208EB
-vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@52pojie.org:443?encryption=none&type=ws&security=tls&path=%2Fsg-melbi%2F&host=josni.hoyes.cloudns.ch&allowInsecure=0#%F0%9F%87%BA%F0%9F%87%B8%20US-7%20%7C%208EB
 vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@www.hthkh.com:443?encryption=none&type=ws&security=tls&path=%2Fsg-melbi%2F&host=josni.hoyes.cloudns.ch&allowInsecure=0#%F0%9F%87%A8%F0%9F%87%B3%20CN-3%20%7C%208EB
 vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@www.aeon.com.hk:443?encryption=none&type=ws&security=tls&path=%2Fsg-melbi%2F&host=josni.hoyes.cloudns.ch&allowInsecure=0#%F0%9F%87%A8%F0%9F%87%B3%20CN-4%20%7C%208EB
 vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@news.cathaypacific.com:443?encryption=none&type=ws&security=tls&path=%2Fsg-melbi%2F&host=josni.hoyes.cloudns.ch&allowInsecure=0#%F0%9F%87%AD%F0%9F%87%B0%20HK-4%20%7C%208EB
@@ -120,7 +116,6 @@ vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@www.allianz.co.th:443?encryption=no
 vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@www.toysrus.co.th:443?encryption=none&type=ws&security=tls&path=%2Fsg-melbi%2F&host=josni.hoyes.cloudns.ch&allowInsecure=0#%F0%9F%87%B9%F0%9F%87%AD%20TH-5%20%7C%208EB
 vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@www.mizuno.com:443?encryption=none&type=ws&security=tls&path=%2Fsg-melbi%2F&host=josni.hoyes.cloudns.ch&allowInsecure=0#%F0%9F%87%AF%F0%9F%87%B5%20JP-2%20%7C%208EB
 vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@edion.co.jp:443?encryption=none&type=ws&security=tls&path=%2Fsg-melbi%2F&host=josni.hoyes.cloudns.ch&allowInsecure=0#%F0%9F%87%AF%F0%9F%87%B5%20JP-3%20%7C%208EB
-vless://83afd88f-200f-4d89-bfc7-66eff160c1d8@162.159.197.1:443?encryption=none&type=ws&security=tls&path=%2Fsg-melbi%2F&host=josni.hoyes.cloudns.ch&allowInsecure=0#%F0%9F%87%BA%F0%9F%87%B8%20US-8%20%7C%208EB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@twzz1.9999231.xyz:500/?insecure=0&sni=tw01.9999231.xyz&udp=true#%F0%9F%87%B9%F0%9F%87%BC%20TW-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@twzz2.9999231.xyz:500/?insecure=0&sni=tw01.9999231.xyz&udp=true#%F0%9F%87%A8%F0%9F%87%B3%20CN-1%20%7C%209PB
 anytls://a7c5d30b-ce9b-4e34-b5cb-66f8308790ef@tw1.9999231.xyz:500/?insecure=0&sni=tw01.9999231.xyz&udp=true#%F0%9F%87%A8%F0%9F%87%B3%20CN-2%20%7C%209PB
