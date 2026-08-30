@@ -1,6 +1,6 @@
 subscription:
   name: Vanic24/VPN 通用订阅
-  updated: '2026-08-30 11:51:03'
+  updated: '2026-08-30 16:37:45'
   node_count: 463
   skipped: 17
 nodes_txt: 'vless://24916ad0-847d-4522-9e17-f4347dee57fd@149.118.158.90:8443?encryption=none&type=ws&security=tls&path=%2F&host=kv.074167.xyz&allowInsecure=0#%F0%9F%87%B2%F0%9F%87%BE%20MY-1%20%7C%208EB
